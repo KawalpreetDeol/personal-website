@@ -6,7 +6,8 @@
         "startDate": "2022-09-15",
         "endDate": "2022-12-30",
         "location": {"city": "Toronto", "state": "Ontario"},
-        "company": "Tealbook"
+        "company": "Tealbook", 
+        "logoURL": "tealbook_logo.jpg"
     },
     {
         "type": "work",
@@ -15,7 +16,8 @@
         "startDate": "2022-01-15",
         "endDate": "2022-04-30",
         "location": {"city": "Toronto", "state": "Ontario"},
-        "company": "Tealbook"
+        "company": "Tealbook",
+        "logoURL": "tealbook_logo.jpg"
     },
     {
         "type": "work",
@@ -24,7 +26,8 @@
         "startDate": "2021-05-15",
         "endDate": "2021-08-30",
         "location": {"city": "Toronto", "state": "Ontario"},
-        "company": "PartnerStack"
+        "company": "PartnerStack",
+        "logoURL": "partnerstack_logo.jpg"
     },
     {
         "type": "work",
@@ -33,7 +36,8 @@
         "startDate": "2020-09-15",
         "endDate": "2020-12-30",
         "location": {"city": "Toronto", "state": "Ontario"},
-        "company": "Horizn"
+        "company": "Horizn",
+        "logoURL": "horizon_studios_canada_logo.jpg"
     },
     {
         "type": "work",
@@ -42,16 +46,18 @@
         "startDate": "2020-01-15",
         "endDate": "2020-04-30",
         "location": {"city": "Toronto", "state": "Ontario"},
-        "company": "Venngo"
+        "company": "Venngo",
+        "logoURL": "venngo_logo.jpg"
     },
     {
         "type": "work",
         "title": "IT Technical Developer",
         "skills": ["SQL", "MySQL", "Relational Modelling"],
-        "startDate": "2022-09-15",
-        "endDate": "2022-12-30",
+        "startDate": "2019-05-15",
+        "endDate": "2019-08-30",
         "location": {"city": "Toronto", "state": "Ontario"},
-        "company": "City of Toronto"
+        "company": "City of Toronto",
+        "logoURL": "city_of_toronto_logo.jpg"
     }
 ]
   

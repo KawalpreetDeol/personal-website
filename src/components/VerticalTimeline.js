@@ -31,10 +31,26 @@ const VerticalTimeline = ({ data }) => {
             {index < data.length && <TimelineConnector />}
           </TimelineSeparator>
           <TimelineContent>
-            <Paper elevation={3} style={{ padding: '20px', maxWidth: '380px', marginLeft: index % 2 ? 'auto' : '0px', marginRight: index % 2 ? '0px' : 'auto'}} >
-              <Typography variant="h6" component="div">
+            <Paper elevation={3} style={{ padding: '13px 20px 20px 20px', maxWidth: '380px', marginLeft: index % 2 ? 'auto' : '0px', marginRight: index % 2 ? '0px' : 'auto'}} >
+              <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+              {!!(index%2) && (
+                <img
+                  src={'./logos/' + event.logoURL} // Assuming you have a 'logo' property in the 'work' events
+                  alt= {event.company + " Logo"}
+                  style={{ maxWidth: '40px', maxHeight: '40px', padding: '5px' }}
+                />
+              )}
+              <Typography variant="h6" component="div" style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
                 {event.title}
               </Typography>
+              {!(index%2) && (
+                <img
+                  src={'./logos/' + event.logoURL} // Assuming you have a 'logo' property in the 'work' events
+                  alt= {event.company + " Logo"}
+                  style={{ maxWidth: '40px', maxHeight: '40px', padding: '5px' }}
+                />
+              )}
+              </div>
               {event.type === 'work' && (
                 <>
                   <Typography variant="caption" color="text.secondary" display="block">
