@@ -18,7 +18,7 @@ function Copyright() {
 function Footer() {
 
   return (
-    <Box component="footer" display="flex" justifyContent="center" sx={{ bgcolor: 'background.paper', py: 2 }}>
+    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 2 }}>
       <Container maxWidth="lg">
         <Typography
           variant="body2"

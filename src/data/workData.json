@@ -1,12 +1,57 @@
 [
     {
         "type": "work",
-        "title": "Job Title 1",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
-        "startDate": "2022-01-02",
-        "endDate": "2023-04-30",
-        "location": {"city": "City", "state": "Province"},
-        "company": "Company Name"
-      }
-  ]
+        "title": "Data Engineer",
+        "skills": ["Google Cloud Platform (GCP)", "Python", "Data Cleansing"],
+        "startDate": "2022-09-15",
+        "endDate": "2022-12-30",
+        "location": {"city": "Toronto", "state": "Ontario"},
+        "company": "Tealbook"
+    },
+    {
+        "type": "work",
+        "title": "Data Engineer",
+        "skills": ["Google Cloud Platform (GCP)", "Python", "Feature Modelling"],
+        "startDate": "2022-01-15",
+        "endDate": "2022-04-30",
+        "location": {"city": "Toronto", "state": "Ontario"},
+        "company": "Tealbook"
+    },
+    {
+        "type": "work",
+        "title": "FullStack Developer",
+        "skills": ["Test Driven Development (TDD)", "Product Design"],
+        "startDate": "2021-05-15",
+        "endDate": "2021-08-30",
+        "location": {"city": "Toronto", "state": "Ontario"},
+        "company": "PartnerStack"
+    },
+    {
+        "type": "work",
+        "title": "Web Developer",
+        "skills": ["React.js", "MySQL", "Relational Modelling"],
+        "startDate": "2020-09-15",
+        "endDate": "2020-12-30",
+        "location": {"city": "Toronto", "state": "Ontario"},
+        "company": "Horizn"
+    },
+    {
+        "type": "work",
+        "title": "PHP Developer",
+        "skills": ["MySQL", "API", "Relational Modelling"],
+        "startDate": "2020-01-15",
+        "endDate": "2020-04-30",
+        "location": {"city": "Toronto", "state": "Ontario"},
+        "company": "Venngo"
+    },
+    {
+        "type": "work",
+        "title": "IT Technical Developer",
+        "skills": ["SQL", "MySQL", "Relational Modelling"],
+        "startDate": "2022-09-15",
+        "endDate": "2022-12-30",
+        "location": {"city": "Toronto", "state": "Ontario"},
+        "company": "City of Toronto"
+    }
+]
   

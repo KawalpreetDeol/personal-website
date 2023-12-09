@@ -21,29 +21,30 @@ const theme = createTheme({
 function App() {
   return (
     
-    <div className="App">
+    <div>
       <Router>
-      <div className="App-TopBar">
-        <ThemeProvider theme={theme}>
-          <TopBar/>
-        </ThemeProvider>
-      </div>
-      <div className='App-Body'>
+      <div className="App">
+        <div className="App-TopBar">
+          <ThemeProvider theme={theme}>
+            <TopBar/>
+          </ThemeProvider>
+        </div>
+        <div  style={{ flex: 1, overflowY: 'auto'}}>
+        <div className='App-Body'>
+            <Routes>
+              <Route path="/" exact element={<Home/>} />
+              <Route path="/projects" element={<Projects/>} />
+              <Route path="/experience" element={<Experiences/>} />
+              <Route path="/contact" element={<ContactMe/>} />
+            </Routes>
+        </div>
         
-          <Routes>
-            <Route path="/" exact element={<Home/>} />
-            <Route path="/projects" element={<Projects/>} />
-            <Route path="/experience" element={<Experiences/>} />
-            <Route path="/contact" element={<ContactMe/>} />
-          </Routes>
-
-        
+        <div className='App-Footer'>
+          <ThemeProvider theme={theme}>
+            <Footer/>
+          </ThemeProvider>
+        </div>
       </div>
-      
-      <div className='App-Footer'>
-        <ThemeProvider theme={theme}>
-          <Footer bottom="0px"/>
-        </ThemeProvider>
       </div>
       </Router>
     </div>

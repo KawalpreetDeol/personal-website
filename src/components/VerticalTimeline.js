@@ -28,10 +28,10 @@ const VerticalTimeline = ({ data }) => {
             <TimelineDot color={event.type === 'work' ? 'primary' : event.type === 'education' ? 'secondary' : 'info'}>
               {event.type === 'work' ? <WorkIcon /> : event.type === 'education' ? <SchoolIcon /> : <WorkspacePremiumIcon />}
             </TimelineDot>
-            {index < data.length - 1 && <TimelineConnector />}
+            {index < data.length && <TimelineConnector />}
           </TimelineSeparator>
           <TimelineContent>
-            <Paper elevation={3} style={{ padding: '20px' }}>
+            <Paper elevation={3} style={{ padding: '20px', maxWidth: '380px', marginLeft: index % 2 ? 'auto' : '0px', marginRight: index % 2 ? '0px' : 'auto'}} >
               <Typography variant="h6" component="div">
                 {event.title}
               </Typography>

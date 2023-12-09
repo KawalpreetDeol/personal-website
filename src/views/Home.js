@@ -22,9 +22,9 @@ function Home() {
    }); 
 
   return (
-    <Container style={{ padding: '20px' }}>
+    <Box style={{ padding: '20px' }}>
       <VerticalTimeline data={sortedData} />
-    </Container>
+    </Box>
   );
 }
 

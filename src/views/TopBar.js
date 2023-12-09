@@ -12,12 +12,23 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom'; 
 
-const pages = [['Home', '/'], ['Experiences', 'experience'], ['Projects', 'projects']];
+// const pages = [['Home', '/'], ['Experiences', 'experience'], ['Projects', 'projects']];
+const pages = [['Home', '/']];
 
 function TopBar() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
-    <AppBar position="static">
-      <Container maxWidth="x1">
+    <AppBar position="fixed">
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon width="6%" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -39,9 +50,17 @@ function TopBar() {
             KAWALPREET DEOL
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              color="inherit"
+              onClick={handleMenuOpen}
+              aria-label="menu"
+              size="large"
+            >
+              <MenuIcon />
+            </IconButton>
             <Menu
               id="menu-appbar"
-              anchorEl={true}
+              anchorEl={anchorEl}
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
@@ -51,18 +70,18 @@ function TopBar() {
                 vertical: 'top',
                 horizontal: 'left',
               }}
-              open={Boolean(true)}
-              onClose={true}
+              open={Boolean(anchorEl)}
+              onClose={handleMenuClose}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
             >
               {pages.map((page) => (
-                <Link to={page[1]} style={{ all: 'unset' }}>
-                <MenuItem key={page[0]} >
-                  <Typography textAlign="center">{page[0]}</Typography>
+                <MenuItem key={page[0]} onClick={handleMenuClose}>
+                  <Link to={page[1]} style={{ all: 'unset' }}>
+                    <Typography textAlign="center">{page[0]}</Typography>
+                  </Link>
                 </MenuItem>
-                </Link>
               ))}
             </Menu>
           </Box>
@@ -83,7 +102,7 @@ function TopBar() {
               textDecoration: 'none',
             }}
           >
-            DEOL ENGINEERS
+            KAWALPREET DEOL
           </Typography>
           <Box width="33%" justifyContent="center" alignItems="center" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -99,14 +118,14 @@ function TopBar() {
           </Box>
 
           <Box width="33%" display="flex" justifyContent="flex-end" alignItems="center" sx={{ flexGrow: 0 }}>
-          <Link to='/contact' style={{ all: 'unset' }}>
+          {/* <Link to='/contact' style={{ all: 'unset' }}>
             <Button
               key={"Contact Me"}
               sx={{ my: 2, color: 'inherit', display: 'block' }}
             >
               {"Contact Me"}
             </Button>
-          </Link>
+          </Link> */}
           </Box>
         </Toolbar>
       </Container>
