@@ -1,0 +1,12 @@
+[
+    {
+        "type": "work",
+        "title": "Job Title 1",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "startDate": "2022-01-02",
+        "endDate": "2023-04-30",
+        "location": {"city": "City", "state": "Province"},
+        "company": "Company Name"
+      }
+  ]
+  

@@ -1,0 +1,11 @@
+[
+    {
+        "type": "education",
+        "title": "University of Waterloo",
+        "skills": ["Subject 1", "Subject 2", "Subject 3"],
+        "startDate": "2017-09-15",
+        "endDate": "2023-06-15",
+        "degree": "BASc Computer Engineering, Honours, Co-op"
+      }
+]
+  
