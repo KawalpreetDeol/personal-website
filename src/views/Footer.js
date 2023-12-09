@@ -26,7 +26,7 @@ function Footer() {
           color="text.secondary"
           component="p"
         >
-            {"Built with React.js"}
+            {"Built with React.js and Material UI."}
         </Typography>
         <Copyright/>
       </Container>
