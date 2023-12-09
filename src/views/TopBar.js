@@ -10,6 +10,8 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
+import CloudIcon from '@mui/icons-material/Cloud';
 import { Link } from 'react-router-dom'; 
 
 // const pages = [['Home', '/'], ['Experiences', 'experience'], ['Projects', 'projects']];
@@ -30,7 +32,7 @@ function TopBar() {
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon width="6%" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <CloudIcon width="6%" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
