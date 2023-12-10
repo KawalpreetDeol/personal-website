@@ -7,12 +7,14 @@ import SocialMediaSidebar from '../components/SocialMediaSidebar';
 import workData from '../data/workData.json';
 import educationData from '../data/educationData.json';
 import certificationData from '../data/certificationData.json';
+import projectData from '../data/projectData.json';
+import courseData from '../data/courseData.json';
 
 import socialMediaData from '../data/socialMediaData.json';
 
 function Home() {
    // Combine all data
-   const allData = [...workData, ...educationData, ...certificationData];
+   const allData = [...workData, ...educationData, ...certificationData, ...projectData, ...courseData];
 
    // Sort combined data by end date for work and education, and earned date for certification
    const sortedData = allData.sort((a, b) => {

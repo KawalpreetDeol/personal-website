@@ -1,0 +1,12 @@
+[
+    {
+        "type": "project",
+        "title": "IMDB Analysis",
+        "skills": ["Tableau"],
+        "startDate": "2023-09-15",
+        "endDate": "2023-10-30",
+        "shortDesc": "Analysis of the IMDB Dataset using Tableau",
+        "projectURL": "https://github.com/KawalpreetDeol/imdb-analysis",
+        "logoURL": "venngo_logo.jpg"
+    }
+]

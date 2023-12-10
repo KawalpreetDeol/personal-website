@@ -6,6 +6,9 @@ import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import DescriptionIcon from '@mui/icons-material/Description';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import ApprovalIcon from '@mui/icons-material/Approval';
+import CodeIcon from '@mui/icons-material/Code';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
 const formatDateRange = (startDate, endDate) => {
   const startDateFormat = new Date(startDate);
@@ -25,8 +28,16 @@ const VerticalTimeline = ({ data }) => {
       {data.map((event, index) => (
         <TimelineItem key={index}>
           <TimelineSeparator>
-            <TimelineDot color={event.type === 'work' ? 'primary' : event.type === 'education' ? 'secondary' : 'info'}>
-              {event.type === 'work' ? <WorkIcon /> : event.type === 'education' ? <SchoolIcon /> : <WorkspacePremiumIcon />}
+            <TimelineDot color={event.type === 'work' ? 'primary' : 
+                                event.type === 'education' ? 'secondary' : 
+                                event.type === 'project' ? 'primary' : 
+                                event.type === 'course' ? 'secondary' : 
+                                'info'}>
+              {event.type === 'work' ? <WorkIcon /> : 
+              event.type === 'education' ? <SchoolIcon /> :
+              event.type === 'certification' ? <ApprovalIcon /> : 
+              event.type === 'course' ? <AutoStoriesIcon /> : 
+              <CodeIcon />}
             </TimelineDot>
             {index < data.length && <TimelineConnector />}
           </TimelineSeparator>
@@ -93,6 +104,45 @@ const VerticalTimeline = ({ data }) => {
                   </Typography>
                   {/* Add any additional certification-related information */}
                 </>
+              )}
+              {event.type === 'course' && (
+                <>
+                  <Typography variant="caption" color="text.secondary" display="block">
+                    {formatDateRange(event.startDate, event.endDate)}
+                    <br />
+                    {event.agency}
+                    <br />
+                    {`Instructor: `}
+                    {event.instructor}
+                    <br />
+                    {event.certificalId != "" && (<span>
+                      {`Certificate ID: `}
+                    <a href={event.certificationIdURL} target="_blank" rel="noopener noreferrer">
+                      {event.certificationId}
+                    </a></span>)}
+                    <br />
+                    {formatSkills(event.skills)}
+                    <br />
+                    {event.courseURL != "" && (<a href={event.courseURL} target="_blank" rel="noopener noreferrer">
+                    View Course
+                  </a>)}
+                  </Typography>
+                </>
+              )}
+              {event.type === 'project' && (
+                <>
+                <Typography variant="caption" color="text.secondary" display="block">
+                  {formatDateRange(event.startDate, event.endDate)}
+                  <br />
+                  {/* {event.shortDesc}
+                  <br /> */}
+                  {formatSkills(event.skills)}
+                  <br />
+                  {event.projectURL != "" && (<a href={event.projectURL} target="_blank" rel="noopener noreferrer">
+                    View Project
+                  </a>)}
+                </Typography>
+              </>
               )}
             </Paper>
           </TimelineContent>
