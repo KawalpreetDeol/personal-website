@@ -5,8 +5,48 @@
         "skills": ["Tableau"],
         "startDate": "2023-11-15",
         "endDate": "2023-11-30",
-        "shortDesc": "Analysis of the IMDB Dataset using Tableau",
+        "shortDesc": "Analysis of the IMDB Dataset",
         "projectURL": "https://github.com/KawalpreetDeol/imdb-analysis",
         "logoURL": "tableau_software_logo.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Boston Real Estate Analysis",
+        "skills": ["Tableau"],
+        "startDate": "2023-11-15",
+        "endDate": "2023-11-29",
+        "shortDesc": "Analysis on Boston's Real Estate Data",
+        "projectURL": "https://github.com/KawalpreetDeol/boston-real-estate-analysis",
+        "logoURL": "tableau_software_logo.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Canada FDI Analysis",
+        "skills": ["Tableau"],
+        "startDate": "2023-11-15",
+        "endDate": "2023-11-28",
+        "shortDesc": "Analysis on Canada's Foreign Direct Investment",
+        "projectURL": "https://github.com/KawalpreetDeol/canada-fdi-analysis",
+        "logoURL": "tableau_software_logo.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Azure Product Data Validation",
+        "skills": ["Databricks", "Datalake Gen2", "Data Factory", "Key Vault"],
+        "startDate": "2023-10-15",
+        "endDate": "2023-10-30",
+        "shortDesc": "Validate product data using Azure",
+        "projectURL": "https://github.com/KawalpreetDeol/product-data-validation",
+        "logoURL": "azure_logo.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Azure Vehicle Telemetry Processing",
+        "skills": ["Data Factory", "Datalake Gen2", "Function App", "SQL Database"],
+        "startDate": "2023-10-14",
+        "endDate": "2023-10-29",
+        "shortDesc": "Process smart vehicle telemetry data stored in Amazon S3 with Azure",
+        "projectURL": "https://github.com/KawalpreetDeol/vehicle-telemetry-processing",
+        "logoURL": "azure_logo.jpg"
     }
 ]

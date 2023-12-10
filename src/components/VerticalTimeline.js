@@ -115,7 +115,7 @@ const VerticalTimeline = ({ data }) => {
                     {`Instructor: `}
                     {event.instructor}
                     <br />
-                    {event.certificalId != "" && (<span>
+                    {event.certificalId != "" && (<span style={{ overflowWrap: "break-word" }}>
                       {`Certificate ID: `}
                     <a href={event.certificationIdURL} target="_blank" rel="noopener noreferrer">
                       {event.certificationId}
@@ -134,8 +134,8 @@ const VerticalTimeline = ({ data }) => {
                 <Typography variant="caption" color="text.secondary" display="block">
                   {formatDateRange(event.startDate, event.endDate)}
                   <br />
-                  {/* {event.shortDesc}
-                  <br /> */}
+                  {event.shortDesc}
+                  <br />
                   {formatSkills(event.skills)}
                   <br />
                   {event.projectURL != "" && (<a href={event.projectURL} target="_blank" rel="noopener noreferrer">
