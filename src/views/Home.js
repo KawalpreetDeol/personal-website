@@ -15,11 +15,7 @@ import courseData from '../data/courseData.json';
 import socialMediaData from '../data/socialMediaData.json';
 
 function Home() {
-  const [selectedFilters, setSelectedFilters] = useState(['work', 'education', 'certification', 'course', 'project']);
-
-  const handleTimelineFilterChange = (value) => {
-    setSelectedFilters(value);
-  };
+  const [selectedFilters, setSelectedFilters] = useState(['work', 'education', 'certification']);
 
   // Combine all data based on the selected filter
   const filteredData = (() => {

@@ -17,8 +17,7 @@ const TimelineFilter = ({ selectedFilters, setSelectedFilters }) => {
   };
 
   return (
-    <Box>
-      <Typography variant="h6">Filter Timeline:</Typography>
+    <Box style={{textAlign: 'center'}}>
       <FormControlLabel
         control={<Checkbox checked={selectedFilters.length === 5} onChange={handleAllChange} />}
         label="All"
