@@ -20,13 +20,13 @@ const SidebarContainer = styled(Box)(({ theme }) => ({
 }));
 
 const LargerIconButton = styled(IconButton)(({ theme }) => ({
-  fontSize: '1.05rem', // Increase the font size by 5%
+  fontSize: '3rem', // Increase the font size by 5%
   marginBottom: theme.spacing(1), // Add margin to the bottom for spacing
 }));
 
 const VerticalLine = styled('div')(({ theme }) => ({
   width: '1px',
-  height: '10vh', // Adjust the height as needed
+  height: '15vh', // Adjust the height as needed
   backgroundColor: 'rgba(0, 0, 0, 0.87)', // Adjust the color as needed
   margin: '0 8px', // Adjust the margin as needed
 }));
@@ -36,10 +36,10 @@ const SocialMediaSidebar = ({ socialMediaData }) => {
     <SidebarContainer>
       {socialMediaData.map((media, index) => (
           <LargerIconButton href={media.url} key={index} target="_blank" rel="noopener noreferrer">
-            {media.icon === 'LinkedInIcon' && <LinkedInIcon />} {/* Use the correct icon component */}
-            {media.icon === 'GitHubIcon' && <GitHubIcon />}
-            {media.icon === 'TwitterIcon' && <TwitterIcon />}
-            {media.icon === 'InstagramIcon' && <InstagramIcon />}
+            {media.icon === 'LinkedInIcon' && <LinkedInIcon fontSize='inherit'/>} {/* Use the correct icon component */}
+            {media.icon === 'GitHubIcon' && <GitHubIcon fontSize='inherit'/>}
+            {media.icon === 'TwitterIcon' && <TwitterIcon fontSize='inherit'/>}
+            {media.icon === 'InstagramIcon' && <InstagramIcon fontSize='inherit'/>}
           </LargerIconButton>
       ))}
       {/* Use the VerticalLine component for the vertical line */}
