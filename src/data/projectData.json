@@ -35,7 +35,7 @@
         "skills": ["Databricks", "Datalake Gen2", "Data Factory", "Key Vault"],
         "startDate": "2023-10-15",
         "endDate": "2023-10-30",
-        "shortDesc": "Validate product data using Azure",
+        "shortDesc": "Validate product data",
         "projectURL": "https://github.com/KawalpreetDeol/product-data-validation",
         "logoURL": "azure_logo.jpg"
     },
@@ -45,7 +45,7 @@
         "skills": ["Data Factory", "Datalake Gen2", "Function App", "SQL Database"],
         "startDate": "2023-10-14",
         "endDate": "2023-10-29",
-        "shortDesc": "Process smart vehicle telemetry data stored in Amazon S3 with Azure",
+        "shortDesc": "Process smart vehicle telemetry data stored in Amazon S3",
         "projectURL": "https://github.com/KawalpreetDeol/vehicle-telemetry-processing",
         "logoURL": "azure_logo.jpg"
     }
