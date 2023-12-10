@@ -5,6 +5,7 @@ import { Box } from '@mui/material';
 import VerticalTimeline from '../components/VerticalTimeline';
 import SocialMediaSidebar from '../components/SocialMediaSidebar';
 import TimelineFilter from '../components/TimelineFilter';
+import Profile from '../components/Profile';
 
 import workData from '../data/workData.json';
 import educationData from '../data/educationData.json';
@@ -30,11 +31,13 @@ function Home() {
   });
 
   return (
-    <Box style={{ padding: '20px' }}>
+    <Container style={{ padding: '20px' }}>
+      <Profile />
+      <hr/>
       <TimelineFilter selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
       <VerticalTimeline data={sortedData} />
       <SocialMediaSidebar socialMediaData={socialMediaData} />
-    </Box>
+    </Container>
   );
 }
 
