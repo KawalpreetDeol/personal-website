@@ -17,7 +17,7 @@ const formatDateRange = (startDate, endDate) => {
   const formattedStartDate = new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric' }).format(startDateFormat);
   const formattedEndDate = endDateFormat ? new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric' }).format(endDateFormat) : 'Present';
 
-  return `${formattedStartDate} - ${formattedEndDate}`;
+  return formattedStartDate == formattedEndDate ? `${formattedStartDate}` : `${formattedStartDate} - ${formattedEndDate}`;
 };
 
 const formatSkills = (skills) => skills.join(' · ');
