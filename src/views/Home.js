@@ -2,11 +2,13 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import { Box } from '@mui/material';
 import VerticalTimeline from '../components/VerticalTimeline';
+import SocialMediaSidebar from '../components/SocialMediaSidebar';
 
 import workData from '../data/workData.json';
 import educationData from '../data/educationData.json';
 import certificationData from '../data/certificationData.json';
 
+import socialMediaData from '../data/socialMediaData.json';
 
 function Home() {
    // Combine all data
@@ -24,6 +26,7 @@ function Home() {
   return (
     <Box style={{ padding: '20px' }}>
       <VerticalTimeline data={sortedData} />
+      <SocialMediaSidebar socialMediaData={socialMediaData} />
     </Box>
   );
 }
