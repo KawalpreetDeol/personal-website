@@ -145,14 +145,14 @@
         "fullForm": "MySQL"
     },
     {
-        "text": "SQL Server Integration Services",
+        "text": "SSIS",
         "value": 20,
-        "fullForm": ""
+        "fullForm": "SQL Server Integration Services"
     },
     {
-        "text": "SQL Server Management Studio",
+        "text": "SSMS",
         "value": 35,
-        "fullForm": ""
+        "fullForm": "SQL Server Management Studio"
     },
     {
         "text": "BigQuery",
