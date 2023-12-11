@@ -13,6 +13,7 @@ const Skills = ({ skills }) => {
     fontSizes: [20, 60],
     fontWeight: 'bold',
     rotations: 1,
+    padding: 5,
     rotationAngles: [0]
   };
 
@@ -21,11 +22,13 @@ const Skills = ({ skills }) => {
       const isActive = callback !== "onWordMouseOut";
       const element = event.target;
       const text = select(element);
-      word.fontSize = word.fontSize ? word.fontSize : `${word.size*.95}px`;
+      word.fontSize = word.fontSize ? word.fontSize : word.size*.95;
       text
         .transition()
-        .attr("background", "white")
-        .attr("font-size", isActive ? "200%" : word.fontSize);
+        .style('opacity', 0)
+        .duration(0)
+        .style('opacity', 1)
+        .attr("font-size", isActive ?  `${word.fontSize * 1.2}px` :  `${word.fontSize}px`);
     };
   }
   const callbacks = {
