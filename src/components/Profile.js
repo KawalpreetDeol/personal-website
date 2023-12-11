@@ -22,7 +22,7 @@ const Profile = () => {
 
       {/* Right Column */}
       <Box>
-        <Avatar sx={{ width: '50vh', height: '50vh' }}>
+        <Avatar sx={{ width: '26vw', height: '26vw' }}>
           {/* Your profile picture or icon */}
           <img src="your-profile-picture.jpg" alt="Profile" style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
         </Avatar>

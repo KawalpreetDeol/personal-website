@@ -1,0 +1,138 @@
+[
+    {
+        "text": "Python",
+        "value": 50
+    },
+    {
+        "text": "SQL",
+        "value": 50
+    },
+    {
+        "text": "JavaScript",
+        "value": 50
+    },
+    {
+        "text": "Node.js",
+        "value": 30
+    },
+    {
+        "text": "React.js",
+        "value": 40
+    },
+    {
+        "text": "Vue.js",
+        "value": 30
+    },
+    {
+        "text": "PHP",
+        "value": 30
+    },
+    {
+        "text": "Laravel",
+        "value": 30
+    },
+    {
+        "text": "PySpark",
+        "value": 40
+    },
+    {
+        "text": "Scala",
+        "value": 35
+    },
+    {
+        "text": "SparkSQL",
+        "value": 40
+    },
+    {
+        "text": "Azure Data Factory",
+        "value": 45
+    },
+    {
+        "text": "Azure Data Lake Gen2",
+        "value": 45
+    },
+    {
+        "text": "Azure Databricks",
+        "value": 40
+    },
+    {
+        "text": "Azure Synapse Analytics",
+        "value": 30
+    },
+    {
+        "text": "Azure Stream Analytics",
+        "value": 25
+    },
+    {
+        "text": "Azure Event Hub",
+        "value": 25
+    },
+    {
+        "text": "Azure Function App",
+        "value": 20
+    },
+    {
+        "text": "Azure SQL Database",
+        "value": 35
+    },
+    {
+        "text": "Snowflake",
+        "value": 20
+    },
+    {
+        "text": "Tableau",
+        "value": 30
+    },
+    {
+        "text": "Power BI",
+        "value": 15
+    },
+    {
+        "text": "Azure HDInsight",
+        "value": 10
+    },
+    {
+        "text": "Apache Spark",
+        "value": 30
+    },
+    {
+        "text": "MySQL",
+        "value": 30
+    },
+    {
+        "text": "SQL Server Integration Services",
+        "value": 20
+    },
+    {
+        "text": "SQL Server Management Studio",
+        "value": 35
+    },
+    {
+        "text": "GCP BigQuery",
+        "value": 25
+    },
+    {
+        "text": "GCP Cloud Storage",
+        "value": 20
+    },
+    {
+        "text": "GCP Datastore",
+        "value": 20
+    },
+    {
+        "text": "GCP Cloud Functions",
+        "value": 30
+    },
+    {
+        "text": "GCP Firebase",
+        "value": 40
+    },
+    {
+        "text": "GCP Firestore",
+        "value": 35
+    },
+    {
+        "text": "AWS S3",
+        "value": 30
+    }
+]

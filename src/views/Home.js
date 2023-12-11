@@ -6,6 +6,7 @@ import VerticalTimeline from '../components/VerticalTimeline';
 import SocialMediaSidebar from '../components/SocialMediaSidebar';
 import TimelineFilter from '../components/TimelineFilter';
 import Profile from '../components/Profile';
+import Skills from '../components/skills';
 
 import workData from '../data/workData.json';
 import educationData from '../data/educationData.json';
@@ -14,6 +15,8 @@ import projectData from '../data/projectData.json';
 import courseData from '../data/courseData.json';
 
 import socialMediaData from '../data/socialMediaData.json';
+import skillsData from '../data/skillsData.json';
+
 
 function Home() {
   const [selectedFilters, setSelectedFilters] = useState(['work', 'education', 'certification']);
@@ -33,7 +36,9 @@ function Home() {
   return (
     <Container style={{ padding: '20px' }}>
       <Profile />
-      <hr/>
+      <hr />
+      <Skills skills={skillsData} style={{maxWidth: '90vw', maxHeight: '100vh'}}/>
+      <hr />
       <TimelineFilter selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
       <VerticalTimeline data={sortedData} />
       <SocialMediaSidebar socialMediaData={socialMediaData} />
