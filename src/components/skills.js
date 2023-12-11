@@ -10,8 +10,14 @@ const Skills = ({ skills }) => {
     rotations: 1,
     rotationAngles: [0],
   };
+  const callbacks = {
+    getwordColor: (word) => (word.value > 50 ? "orange" : "purple"),
+    getWordTooltip: (word) => `${word.fullForm}`,
+    // onWordMouseOver: (word) =>``,
+    // onWordClick: (word) =>``
+  }
 
-  return <WordCloud words={skills} options={wordcloudOptions} style={{maxWidth: '100vw', maxHeight: '100vh'}}/>;
+  return <WordCloud words={skills} callbacks={callbacks} options={wordcloudOptions} style={{maxWidth: '100vw', maxHeight: '100vh'}}/>;
 };
 
 export default Skills;

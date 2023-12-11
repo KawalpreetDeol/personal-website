@@ -1,138 +1,207 @@
 [
     {
         "text": "Python",
-        "value": 50
+        "value": 50,
+        "fullForm": "Python"
     },
     {
         "text": "SQL",
-        "value": 50
+        "value": 50,
+        "fullForm": "Structured Query Language"
     },
     {
         "text": "JavaScript",
-        "value": 50
+        "value": 50,
+        "fullForm": "JavaScript"
     },
     {
         "text": "Node.js",
-        "value": 30
+        "value": 30,
+        "fullForm": "Node.js"
     },
     {
         "text": "React.js",
-        "value": 40
+        "value": 40,
+        "fullForm": "React.js"
     },
     {
         "text": "Vue.js",
-        "value": 30
+        "value": 30,
+        "fullForm": "Vue.js"
     },
     {
         "text": "PHP",
-        "value": 30
+        "value": 30,
+        "fullForm": "PHP Hypertext Preprocessor"
     },
     {
         "text": "Laravel",
-        "value": 30
+        "value": 30,
+        "fullForm": "Laravel"
     },
     {
         "text": "PySpark",
-        "value": 40
+        "value": 40,
+        "fullForm": "PySpark"
     },
     {
         "text": "Scala",
-        "value": 35
+        "value": 35,
+        "fullForm": "Scala"
     },
     {
         "text": "SparkSQL",
-        "value": 40
+        "value": 40,
+        "fullForm": "SparkSQL"
     },
     {
-        "text": "Azure Data Factory",
-        "value": 45
+        "text": "Data Factory",
+        "value": 45,
+        "fullForm": "Azure Data Factory"
     },
     {
-        "text": "Azure Data Lake Gen2",
-        "value": 45
+        "text": "Data Lake Gen2",
+        "value": 45,
+        "fullForm": "Azure Data Lake Gen2"
     },
     {
-        "text": "Azure Databricks",
-        "value": 40
+        "text": "Databricks",
+        "value": 40,
+        "fullForm": "Azure Databricks"
     },
     {
-        "text": "Azure Synapse Analytics",
-        "value": 30
+        "text": "Synapse",
+        "value": 30,
+        "fullForm": "Azure Sypnapse Analytics"
     },
     {
-        "text": "Azure Stream Analytics",
-        "value": 25
+        "text": "Stream Analytics",
+        "value": 25,
+        "fullForm": "Azure Stream Analytics"
     },
     {
-        "text": "Azure Event Hub",
-        "value": 25
+        "text": "Event Hub",
+        "value": 25,
+        "fullForm": "Azure Event Hub"
     },
     {
-        "text": "Azure Function App",
-        "value": 20
+        "text": "Function App",
+        "value": 20,
+        "fullForm": "Azure Function App"
     },
     {
-        "text": "Azure SQL Database",
-        "value": 35
+        "text": "SQL Database",
+        "value": 35,
+        "fullForm": "Azure SQL Database"
     },
     {
         "text": "Snowflake",
-        "value": 20
+        "value": 20,
+        "fullForm": "Snowflake"
     },
     {
         "text": "Tableau",
-        "value": 30
+        "value": 30,
+        "fullForm": "Tableau"
     },
     {
         "text": "Power BI",
-        "value": 15
+        "value": 15,
+        "fullForm": "Microsoft Power BI"
     },
     {
-        "text": "Azure HDInsight",
-        "value": 10
+        "text": "HDInsight",
+        "value": 10,
+        "fullForm": "Azure HDInsight"
     },
     {
-        "text": "Apache Spark",
-        "value": 30
+        "text": "Log Analytics",
+        "value": 15,
+        "fullForm": "Azure Log Analytics"
+    },
+    {
+        "text": "Monitor",
+        "value": 10,
+        "fullForm": "Azure Monitor"
+    },
+    {
+        "text": "Active Directory (Entra)",
+        "value": 25,
+        "fullForm": "Azure Active Directory (Entra)"
+    },
+    {
+        "text": "Key Vault",
+        "value": 30,
+        "fullForm": "Azure Key Vault"
+    },
+    {
+        "text": "Spark",
+        "value": 30,
+        "fullForm": "Apache Spark"
     },
     {
         "text": "MySQL",
-        "value": 30
+        "value": 30,
+        "fullForm": "MySQL"
     },
     {
         "text": "SQL Server Integration Services",
-        "value": 20
+        "value": 20,
+        "fullForm": ""
     },
     {
         "text": "SQL Server Management Studio",
-        "value": 35
+        "value": 35,
+        "fullForm": ""
     },
     {
-        "text": "GCP BigQuery",
-        "value": 25
+        "text": "BigQuery",
+        "value": 25,
+        "fullForm": "GCP BigQuery"
     },
     {
-        "text": "GCP Cloud Storage",
-        "value": 20
+        "text": "Cloud Storage",
+        "value": 20,
+        "fullForm": "GCP Cloud Storage"
     },
     {
-        "text": "GCP Datastore",
-        "value": 20
+        "text": "Datastore",
+        "value": 20,
+        "fullForm": "GCP Datastore"
     },
     {
-        "text": "GCP Cloud Functions",
-        "value": 30
+        "text": "Cloud Functions",
+        "value": 30,
+        "fullForm": "GCP Cloud Functions"
     },
     {
-        "text": "GCP Firebase",
-        "value": 40
+        "text": "Secret Manager",
+        "value": 10,
+        "fullForm": "GCP Secret Manager"
     },
     {
-        "text": "GCP Firestore",
-        "value": 35
+        "text": "Firebase",
+        "value": 40,
+        "fullForm": "GCP Firebase"
     },
     {
-        "text": "AWS S3",
-        "value": 30
+        "text": "Firestore",
+        "value": 35,
+        "fullForm": "GCP Firestore"
+    },
+    {
+        "text": "Cloud Logging",
+        "value": 15,
+        "fullForm": "GCP Cloud Logging"
+    },
+    {
+        "text": "Apps Script",
+        "value": 20,
+        "fullForm": "Google Apps Script"
+    },
+    {
+        "text": "S3",
+        "value": 30,
+        "fullForm": "AWS S3"
     }
 ]
