@@ -20,7 +20,7 @@ import socialMediaData from '../data/socialMediaData.json';
 function Home() {
   const [selectedFilters, setSelectedFilters] = useState(['work', 'education', 'certification']);
   const [profileRef, profileInView] = useInView(); // Use useInView for Profile
-  const [skillsRef, skillsInView] = useInView(); // Use useInView for Skills
+  const [servicesRef, skillsInView] = useInView(); // Use useInView for Skills
   const [timelineRef, timelineInView] = useInView(); // Use useInView for Timeline
 
   // Combine all data based on the selected filter
@@ -43,7 +43,7 @@ function Home() {
         <Profile />
       </Box>
       <hr />
-      <Box ref={skillsRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw',
+      <Box ref={servicesRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw',
                                     maxHeight: '100vh', opacity: skillsInView ? 1 : 0, transition: 'opacity 3s',
                                     minHeight: '50vh' }}>
         <Services />
