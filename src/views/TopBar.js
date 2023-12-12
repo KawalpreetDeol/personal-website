@@ -32,7 +32,7 @@ function TopBar() {
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <CloudIcon width="6%" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <SelfImprovementIcon width="6%" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap

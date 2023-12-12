@@ -4,7 +4,7 @@ import { Box, Typography, Avatar } from '@mui/material';
 
 const Profile = () => {
   return (
-    <Box style={{ display: 'flex', marginBottom: '6vh', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ display: 'flex', marginBottom: '8vh', justifyContent: 'center', alignItems: 'center' }}>
       {/* Left Column */}
       <Box style={{ flex: 1, paddingRight: '20px' }}>
         <Typography variant="h1" sx={{ fontWeight: 700, marginBottom: '8px', fontSize: '4.4vw' }}>
