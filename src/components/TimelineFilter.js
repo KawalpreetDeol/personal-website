@@ -26,7 +26,7 @@ const TimelineFilter = ({ selectedFilters, setSelectedFilters }) => {
         <FormControlLabel
           key={filter}
           control={<Checkbox checked={selectedFilters.includes(filter)} onChange={() => handleChange(filter)} />}
-          label={filter.charAt(0).toUpperCase() + filter.slice(1)}
+          label={filter.charAt(0).toUpperCase() + filter.slice(1) + (filter === 'course' || filter === 'certification' || filter === 'project' ? 's' : '')}
         />
       ))}
     </Box>
