@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@emotion/react';
 import './App.css';
-import TopBar from './views/TopBar';
-import Footer from './views/Footer';
+import TopBar from './components/TopBar';
+import Footer from './components/Footer';
 import Home from './views/Home';
 import Projects from './views/Projects';
 import ContactMe from './views/ContactMe';

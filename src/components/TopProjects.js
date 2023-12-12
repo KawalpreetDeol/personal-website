@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Projects = ({projects}) => {
+const TopProjects = ({projects}) => {
   const classes = useStyles();
 
   return (
@@ -52,4 +52,4 @@ const Projects = ({projects}) => {
   );
 };
 
-export default Projects;
+export default TopProjects;

@@ -28,6 +28,21 @@ function TopBar() {
     setAnchorEl(null);
   };
 
+  const handleDownload = () => {
+    // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+    const pdfFile = 'resume-kawalpreet_deol.pdf';
+
+    // Create a temporary anchor element
+    const anchor = document.createElement('a');
+    anchor.href = pdfFile;
+    anchor.download = 'resume-kawalpreet_deol.pdf';
+
+    // Trigger a click on the anchor to start the download
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+  };
+
   return (
     <AppBar position="fixed">
       <Container maxWidth="xl">
@@ -120,14 +135,21 @@ function TopBar() {
           </Box>
 
           <Box width="33%" display="flex" justifyContent="flex-end" alignItems="center" sx={{ flexGrow: 0 }}>
-          {/* <Link to='/contact' style={{ all: 'unset' }}>
+            <Button
+              key={"Resume"}
+              sx={{ my: 2, color: 'inherit', display: 'block' }}
+              onClick={handleDownload}
+            >
+              {"Resume"}
+            </Button>
+          <Link to='/contact' style={{ all: 'unset' }}>
             <Button
               key={"Contact Me"}
               sx={{ my: 2, color: 'inherit', display: 'block' }}
             >
               {"Contact Me"}
             </Button>
-          </Link> */}
+          </Link>
           </Box>
         </Toolbar>
       </Container>
