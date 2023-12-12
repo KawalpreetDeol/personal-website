@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardContent, Typography, Grid, Container } from '@material-ui/core';
+import { Card, CardContent, Typography, Grid, Container } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
 import CloudIcon from '@mui/icons-material/Cloud';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
@@ -33,14 +33,14 @@ const services = [
     icon: 'AnalyticsIcon',
     title: 'Data Analyst',
     description: `Extract actionable insights from complex datasets, employing statistical and analytical techniques. Interpret 
-                  trends, provide valuable business intelligence, and contribute to informed decision-making processes within organizations.`,
+                  trends, create dynamic visualizations, provide valuable business intelligence, and contribute to informed decision-making processes within organizations.`,
   },
   {
     icon: 'CodeIcon',
     title: 'Data Engineer',
     description: `Develop and maintain scalable data architectures, ensuring the efficient flow of information. Design robust 
                   data pipelines, optimize data processing, and enhance data accessibility, fostering innovation and 
-                  data-driven solutions within enterprises`,
+                  data-driven solutions within enterprises.`,
   },
 ];
 
@@ -58,11 +58,12 @@ const Services = () => {
           <Grid item xs={12} sm={6} md={4} key={index}>
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
-                {service.icon === 'CodeIcon' ? <CodeIcon /> : service.icon === 'CloudIcon' ? <CloudIcon /> : <AnalyticsIcon />}
-                <Typography variant="h6" component="div">
+                {service.icon === 'CodeIcon' ? <CodeIcon style={{width: '30px', height: '30px'}}/> : service.icon === 'CloudIcon' ? 
+                <CloudIcon style={{width: '30px', height: '30px'}}/> : <AnalyticsIcon  style={{width: '30px', height: '30px'}}/>}
+                <Typography variant="h5" component="div" style={{padding: '10px'}}>
                   {service.title}
                 </Typography>
-                <Typography variant="body2" color="textSecondary">
+                <Typography variant="body1" color="textSecondary">
                   {service.description}
                 </Typography>
               </CardContent>

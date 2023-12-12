@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 import VerticalTimeline from '../components/VerticalTimeline';
 import SocialMediaSidebar from '../components/SocialMediaSidebar';
@@ -37,18 +38,21 @@ function Home() {
   return (
     <Container style={{ padding: '20px' }}>
       <Box ref={profileRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw', 
-                                     maxHeight: '100vh', opacity: profileInView ? 1 : 0, transition: 'opacity 3s',
+                                     maxHeight: '100vh', opacity: profileInView ? 1 : 0, transition: 'opacity 4s',
                                      minHeight: '100vh' }}>
         <Profile />
       </Box>
       <hr />
       <Box ref={skillsRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw',
                                     maxHeight: '100vh', opacity: skillsInView ? 1 : 0, transition: 'opacity 3s',
-                                    minHeight: '100vh' }}>
-        <Services style={{ maxWidth: '100vw', maxHeight: '100vh' }} />
+                                    minHeight: '50vh' }}>
+        <Services />
       </Box>
       <hr />
       <Box ref={timelineRef} style={{ opacity: timelineInView ? 1 : 0, transition: 'opacity 3s' }}>
+        <Typography variant="h4" align="center" gutterBottom style={{paddingTop: '40px', paddingBottom: '10px'}}>
+          My Experiences
+        </Typography>
         <TimelineFilter selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
         <VerticalTimeline data={sortedData} />
       </Box>
