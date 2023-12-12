@@ -38,7 +38,7 @@ function Home() {
   return (
     <Container style={{ padding: '20px' }}>
       <Box ref={profileRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw', 
-                                     maxHeight: '100vh', opacity: profileInView ? 1 : 0, transition: 'opacity 4s',
+                                     maxHeight: '100vh', opacity: profileInView ? 1 : 0, transition: 'opacity 3s',
                                      minHeight: '100vh' }}>
         <Profile />
       </Box>

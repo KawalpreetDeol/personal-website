@@ -8,7 +8,8 @@ import {
   Container,
   Paper,
 } from '@material-ui/core';
-
+import SocialMediaSidebar from '../components/SocialMediaSidebar';
+import socialMediaData from '../data/socialMediaData.json';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -109,6 +110,7 @@ const ContactMe = () => {
         onClose={handleSnackbarClose}
         message="Form submitted successfully!"
       />
+      <SocialMediaSidebar socialMediaData={socialMediaData} />
     </Container>
   );
 };
