@@ -47,7 +47,9 @@ function TopBar() {
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <SelfImprovementIcon width="6%" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Link to='/' style={{ all: 'unset', cursor: 'pointer' }}>
+            <SelfImprovementIcon width="6%" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          </Link >
           <Typography
             variant="h6"
             noWrap
@@ -63,8 +65,9 @@ function TopBar() {
               color: 'inherit',
               textDecoration: 'none',
             }}
-          >
+          ><Link to='/' style={{ all: 'unset', cursor: 'pointer' }}>
             KAWALPREET DEOL
+            </Link>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton

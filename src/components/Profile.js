@@ -5,7 +5,7 @@ import '../styles/Profile.css'; // Import a separate CSS file for styling
 const Profile = () => {
   const [jobTitle, setJobTitle] = useState('');
   const [cursorVisible, setCursorVisible] = useState(true);
-  const jobTitles = ['Data Engineer', 'Data Analyst', 'Cloud Architect'];
+  const jobTitles = ['Software Engineer', 'Data Engineer', 'Data Analyst'];
 
   useEffect(() => {
     let currentIndex = 0;
@@ -63,7 +63,7 @@ const Profile = () => {
           {cursorVisible && <span className="cursor">|</span>}
         </Typography>
         <Typography variant="body1" className="description">
-          I am passionate about solving real-world problems with efficient and effective data solutions.
+          I am passionate about solving real-world problems with efficient and effective data and software solutions.
           Seeking meaningful projects and innovative partnerships, I am eager to bring my insights and talents to 
           a team or project that values excellence and creativity. 
         </Typography>

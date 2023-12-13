@@ -23,25 +23,32 @@ const useStyles = makeStyles((theme) => ({
 
 const services = [
   {
-    icon: 'CloudIcon',
-    title: 'Cloud Architect',
-    description: `Design and implement scalable, secure cloud solutions, translating business needs into efficient architectures. 
-                  Optimize performance, collaborate cross-functionally, and stay updated on emerging technologies for continual 
-                  improvement.`,
-  },
-  {
     icon: 'AnalyticsIcon',
     title: 'Data Analyst',
     description: `Extract actionable insights from complex datasets, employing statistical and analytical techniques. Interpret 
                   trends, create dynamic visualizations, provide valuable business intelligence, and contribute to informed decision-making processes within organizations.`,
   },
   {
-    icon: 'CodeIcon',
+    icon: 'CloudIcon',
     title: 'Data Engineer',
     description: `Develop and maintain scalable data architectures, ensuring the efficient flow of information. Design robust 
                   data pipelines, optimize data processing, and enhance data accessibility, fostering innovation and 
                   data-driven solutions within enterprises.`,
   },
+  // {
+  //   icon: 'CloudIcon',
+  //   title: 'Cloud Architect',
+  //   description: `Design and implement scalable, secure cloud solutions, translating business needs into efficient architectures. 
+  //                 Optimize performance, collaborate cross-functionally, and stay updated on emerging technologies for continual 
+  //                 improvement.`,
+  // },
+  {
+    icon: 'CodeIcon',
+    title: 'Software Engineer',
+    description: `Design and implement efficient, modular software solutions utilizing data structures and algorithms. 
+                  Optimize performance, collaborate cross-functionally, and stay updated on emerging technologies for continual 
+                  improvement.`,
+  }
 ];
 
 const Services = () => {
@@ -50,7 +57,7 @@ const Services = () => {
   return (
     <Container className={classes.root}>
       <Typography variant="h4" align="center" gutterBottom>
-        My Services
+        Services
       </Typography>
 
       <Grid container spacing={2}>

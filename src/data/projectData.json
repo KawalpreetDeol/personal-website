@@ -37,7 +37,7 @@
         "endDate": "2023-10-30",
         "shortDesc": "Validate product data",
         "projectURL": "https://github.com/KawalpreetDeol/product-data-validation",
-        "logoURL": "azure_logo.jpg"
+        "logoURL": "azure_logo_2.jpg"
     },
     {
         "type": "project",
@@ -47,6 +47,6 @@
         "endDate": "2023-10-29",
         "shortDesc": "Process smart vehicle telemetry data stored in Amazon S3",
         "projectURL": "https://github.com/KawalpreetDeol/vehicle-telemetry-processing",
-        "logoURL": "azure_logo.jpg"
+        "logoURL": "azure_logo_2.jpg"
     }
 ]

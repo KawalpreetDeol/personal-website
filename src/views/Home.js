@@ -16,12 +16,14 @@ import projectData from '../data/projectData.json';
 import courseData from '../data/courseData.json';
 
 import socialMediaData from '../data/socialMediaData.json';
+import TopProjects from '../components/TopProjects';
 
 function Home() {
   const [selectedFilters, setSelectedFilters] = useState(['work', 'education', 'certification']);
   const [profileRef, profileInView] = useInView(); // Use useInView for Profile
-  const [servicesRef, skillsInView] = useInView(); // Use useInView for Skills
+  const [servicesRef, servicesInView] = useInView(); // Use useInView for Skills
   const [timelineRef, timelineInView] = useInView(); // Use useInView for Timeline
+  const [projectsRef, projectsInView] = useInView(); // Use useInView for Projects
 
   // Combine all data based on the selected filter
   const filteredData = (() => {
@@ -44,14 +46,20 @@ function Home() {
       </Box>
       <hr />
       <Box ref={servicesRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw',
-                                    maxHeight: '100vh', opacity: skillsInView ? 1 : 0, transition: 'opacity 3s',
+                                    maxHeight: '100vh', opacity: servicesInView ? 1 : 0, transition: 'opacity 3s',
                                     minHeight: '50vh' }}>
         <Services />
       </Box>
       <hr />
+      <Box ref={projectsRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw',
+                                    maxHeight: '100vh', opacity: projectsInView ? 1 : 0, transition: 'opacity 3s',
+                                    minHeight: '50vh' }}>
+        <TopProjects />
+      </Box>
+      <hr />
       <Box ref={timelineRef} style={{ opacity: timelineInView ? 1 : 0, transition: 'opacity 3s' }}>
         <Typography variant="h4" align="center" gutterBottom style={{paddingTop: '40px', paddingBottom: '10px'}}>
-          My Experiences
+          Experiences
         </Typography>
         <TimelineFilter selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
         <VerticalTimeline data={sortedData} />
