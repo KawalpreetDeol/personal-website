@@ -64,25 +64,25 @@ const VerticalTimeline = ({ data }) => {
               </div>
               {event.type === 'work' && (
                 <>
-                  <Typography variant="caption" color="text.secondary" display="block">
+                  <Typography variant="body1" color="text.secondary" display="block">
                     {formatDateRange(event.startDate, event.endDate)}
                     <br />
                     {event.company}
                   </Typography>
-                  <Typography variant="caption" color="text.secondary" display="block">
+                  <Typography variant="body1" color="text.secondary" display="block">
                     {`${event.location.city}, ${event.location.state}`}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography variant="body1" color="text.secondary">
                     {formatSkills(event.skills)}
                   </Typography>
                 </>
               )}
               {event.type === 'education' && (
                 <>
-                  <Typography variant="caption" color="text.secondary" display="block">
+                  <Typography variant="body1" color="text.secondary" display="block">
                     {formatDateRange(event.startDate, event.endDate)}
                   </Typography>
-                  <Typography variant="caption" color="text.secondary" display="block">
+                  <Typography variant="body1" color="text.secondary" display="block">
                     {event.degree}
                   </Typography>
                   {/* Add any additional education-related information */}
@@ -90,7 +90,7 @@ const VerticalTimeline = ({ data }) => {
               )}
               {event.type === 'certification' && (
                 <>
-                  <Typography variant="caption" color="text.secondary" display="block">
+                  <Typography variant="body1" color="text.secondary" display="block">
                     {event.agency}
                     <br />
                     {`Certification ID: `}
@@ -107,7 +107,7 @@ const VerticalTimeline = ({ data }) => {
               )}
               {event.type === 'course' && (
                 <>
-                  <Typography variant="caption" color="text.secondary" display="block">
+                  <Typography variant="body1" color="text.secondary" display="block">
                     {formatDateRange(event.startDate, event.endDate)}
                     <br />
                     {event.agency}
@@ -131,7 +131,7 @@ const VerticalTimeline = ({ data }) => {
               )}
               {event.type === 'project' && (
                 <>
-                <Typography variant="caption" color="text.secondary" display="block">
+                <Typography variant="body1" color="text.secondary" display="block">
                   {formatDateRange(event.startDate, event.endDate)}
                   <br />
                   {event.shortDesc}

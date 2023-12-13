@@ -2,7 +2,7 @@
     {
         "type": "work",
         "title": "Data Engineer",
-        "skills": ["Google Cloud Platform (GCP)", "Python", "Data Cleansing"],
+        "skills": ["GCP", "Python", "Flask", "React.js", "Data Quality"],
         "startDate": "2022-09-15",
         "endDate": "2022-12-30",
         "location": {"city": "Toronto", "state": "Ontario"},
@@ -12,7 +12,7 @@
     {
         "type": "work",
         "title": "Data Engineer",
-        "skills": ["Google Cloud Platform (GCP)", "Python", "Feature Modelling"],
+        "skills": ["GCP", "Python", "Data Quality", "Feature Modelling"],
         "startDate": "2022-01-15",
         "endDate": "2022-04-30",
         "location": {"city": "Toronto", "state": "Ontario"},
@@ -32,7 +32,7 @@
     {
         "type": "work",
         "title": "Web Developer",
-        "skills": ["React.js", "MySQL", "Relational Modelling"],
+        "skills": ["React.js", "Laravel", "MySQL", "Relational Modelling"],
         "startDate": "2020-09-15",
         "endDate": "2020-12-30",
         "location": {"city": "Toronto", "state": "Ontario"},
@@ -42,7 +42,7 @@
     {
         "type": "work",
         "title": "PHP Developer",
-        "skills": ["MySQL", "API", "Relational Modelling"],
+        "skills": ["Vue.js", "MySQL", "API", "Relational Modelling"],
         "startDate": "2020-01-15",
         "endDate": "2020-04-30",
         "location": {"city": "Toronto", "state": "Ontario"},
@@ -52,7 +52,7 @@
     {
         "type": "work",
         "title": "IT Technical Developer",
-        "skills": ["SQL", "MySQL", "Relational Modelling"],
+        "skills": ["JavaScript", "SQL", "MySQL", "Relational Modelling"],
         "startDate": "2019-05-15",
         "endDate": "2019-08-30",
         "location": {"city": "Toronto", "state": "Ontario"},

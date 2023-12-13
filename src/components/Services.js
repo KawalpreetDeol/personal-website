@@ -46,7 +46,7 @@ const services = [
     icon: 'CodeIcon',
     title: 'Software Engineer',
     description: `Design and implement efficient, modular software solutions utilizing data structures and algorithms. 
-                  Optimize performance, collaborate cross-functionally, and stay updated on emerging technologies for continual 
+                  Optimize performance, collaborate cross-functional teams, and stay updated on emerging technologies for continual 
                   improvement.`,
   }
 ];

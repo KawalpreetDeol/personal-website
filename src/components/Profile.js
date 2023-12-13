@@ -73,7 +73,7 @@ const Profile = () => {
       <Box className="right-column">
         <Avatar className="avatar">
           {/* Your profile picture or icon */}
-          <img src="your-profile-picture.jpg" alt="Profile" className="avatar-image" />
+          <img src="profile_pic.jpg" alt="Profile" className="avatar-image" />
         </Avatar>
       </Box>
     </Box>
