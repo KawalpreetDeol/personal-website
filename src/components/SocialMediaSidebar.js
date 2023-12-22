@@ -36,13 +36,12 @@ const SocialMediaSidebar = ({ socialMediaData }) => {
     <SidebarContainer>
       {socialMediaData.map((media, index) => (
           <LargerIconButton href={media.url} key={index} target="_blank" rel="noopener noreferrer">
-            {media.icon === 'LinkedInIcon' && <LinkedInIcon fontSize='inherit'/>} {/* Use the correct icon component */}
+            {media.icon === 'LinkedInIcon' && <LinkedInIcon fontSize='inherit'/>}
             {media.icon === 'GitHubIcon' && <GitHubIcon fontSize='inherit'/>}
             {media.icon === 'TwitterIcon' && <TwitterIcon fontSize='inherit'/>}
             {media.icon === 'InstagramIcon' && <InstagramIcon fontSize='inherit'/>}
           </LargerIconButton>
       ))}
-      {/* Use the VerticalLine component for the vertical line */}
       <VerticalLine />
     </SidebarContainer>
   );

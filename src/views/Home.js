@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { Box } from '@mui/material';
+import { Box, Divider } from '@mui/material';
 import VerticalTimeline from '../components/VerticalTimeline';
 import SocialMediaSidebar from '../components/SocialMediaSidebar';
 import TimelineFilter from '../components/TimelineFilter';
@@ -38,25 +38,26 @@ function Home() {
   });
 
   return (
-    <Container style={{ padding: '20px' }}>
-      <Box ref={profileRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw', 
+    <Container style={{ padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                        maxWidth: '80vw', width: '80vw' }}>
+      <Box ref={profileRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',
                                      maxHeight: '100vh', opacity: profileInView ? 1 : 0, transition: 'opacity 3s',
                                      minHeight: '100vh' }}>
         <Profile />
       </Box>
-      <hr />
-      <Box ref={servicesRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw',
+      <hr style={{flexGrow: 1, maxWidth: '100%', width: '100%'}} />
+      <Box ref={servicesRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', 
                                     maxHeight: '100vh', opacity: servicesInView ? 1 : 0, transition: 'opacity 3s',
                                     minHeight: '50vh' }}>
         <Services />
       </Box>
-      <hr />
-      <Box ref={projectsRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: '80vw',
+      <hr style={{flexGrow: 1, maxWidth: '100%',  width: '100%'}} />
+      <Box ref={projectsRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', 
                                     maxHeight: '100vh', opacity: projectsInView ? 1 : 0, transition: 'opacity 3s',
                                     minHeight: '50vh' }}>
         <TopProjects />
       </Box>
-      <hr />
+      <hr style={{flexGrow: 1, maxWidth: '100%', width: '100%'}} />
       <Box ref={timelineRef} style={{ opacity: timelineInView ? 1 : 0, transition: 'opacity 3s' }}>
         <Typography variant="h4" align="center" gutterBottom style={{paddingTop: '40px', paddingBottom: '10px'}}>
           Experiences

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Typography, Avatar } from '@mui/material';
-import '../styles/Profile.css'; // Import a separate CSS file for styling
+import '../styles/Profile.css';
 
 const Profile = () => {
   const [jobTitle, setJobTitle] = useState('');
@@ -39,7 +39,7 @@ const Profile = () => {
         setCursorVisible(false);
       }, (title.length * 2 + 1) * 50 + 500); // Adjust the delay after typing is complete
     };
-  
+    
     const typingInterval = setInterval(() => {
       typeAnimation();
       // Move to the next job title in the array
@@ -72,7 +72,6 @@ const Profile = () => {
       {/* Right Column */}
       <Box className="right-column">
         <Avatar className="avatar">
-          {/* Your profile picture or icon */}
           <img src="profile_pic.jpg" alt="Profile" className="avatar-image" />
         </Avatar>
       </Box>

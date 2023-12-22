@@ -44,8 +44,7 @@ const ContactMe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    // For this example, we'll just display a snackbar
+    // Add form submission logic
     setSnackbarOpen(true);
   };
 

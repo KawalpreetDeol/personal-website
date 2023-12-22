@@ -46,7 +46,7 @@ const VerticalTimeline = ({ data }) => {
               <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
               {!!(index%2) && (
                 <img
-                  src={'./logos/' + event.logoURL} // Assuming you have a 'logo' property in the 'work' events
+                  src={'./logos/' + event.logoURL}
                   alt= {event.company + " Logo"}
                   style={{ maxWidth: '40px', maxHeight: '40px', padding: '5px' }}
                 />
@@ -56,7 +56,7 @@ const VerticalTimeline = ({ data }) => {
               </Typography>
               {!(index%2) && (
                 <img
-                  src={'./logos/' + event.logoURL} // Assuming you have a 'logo' property in the 'work' events
+                  src={'./logos/' + event.logoURL}
                   alt= {event.company + " Logo"}
                   style={{ maxWidth: '40px', maxHeight: '40px', padding: '5px' }}
                 />
@@ -85,7 +85,6 @@ const VerticalTimeline = ({ data }) => {
                   <Typography variant="body1" color="text.secondary" display="block">
                     {event.degree}
                   </Typography>
-                  {/* Add any additional education-related information */}
                 </>
               )}
               {event.type === 'certification' && (
@@ -102,7 +101,6 @@ const VerticalTimeline = ({ data }) => {
                     <br />
                     {`Expires: ${event.expDate}`}
                   </Typography>
-                  {/* Add any additional certification-related information */}
                 </>
               )}
               {event.type === 'course' && (

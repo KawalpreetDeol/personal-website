@@ -57,7 +57,7 @@ const TopProjects = () => {
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
                 <img
-                  src={'./logos/' + project.icon} // Assuming you have a 'logo' property in the 'work' events
+                  src={'./logos/' + project.icon} 
                   alt=''
                   style={{ width: '30px', height: '30px' }}
                 />

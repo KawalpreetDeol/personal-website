@@ -1,4 +1,3 @@
-// TimelineFilter.js
 import React, { useState } from 'react';
 import { Box, Checkbox, FormControlLabel, Typography } from '@mui/material';
 

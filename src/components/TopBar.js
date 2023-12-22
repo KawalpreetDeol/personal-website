@@ -29,7 +29,6 @@ function TopBar() {
   };
 
   const handleDownload = () => {
-    // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
     const pdfFile = 'resume-kawalpreet_deol.pdf';
 
     // Create a temporary anchor element
