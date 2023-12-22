@@ -24,22 +24,18 @@ const projects = [
   {
     icon: 'azure_logo_2.jpg',
     title: 'Vehicle Telemetry Processing',
-    description: `Extract actionable insights from complex datasets, employing statistical and analytical techniques. Interpret 
-                  trends, create dynamic visualizations, provide valuable business intelligence, and contribute to informed decision-making processes within organizations.`,
+    description: `Built a pipeline to process vehicle telemetry data retrieved from S3 and store the results in a SQL
+                  Database using Data Lake Gen2, Data Factory, and Functions App.`,
   },
   {
     icon: 'tableau_software_logo.jpg',
     title: 'IMDB Data Analysis',
-    description: `Develop and maintain scalable data architectures, ensuring the efficient flow of information. Design robust 
-                  data pipelines, optimize data processing, and enhance data accessibility, fostering innovation and 
-                  data-driven solutions within enterprises.`,
+    description: `Analysis and visualization of the IMDB dataset using Tableau.`,
   },
   {
     icon: 'python_logo.jpg',
-    title: 'Stock Price Predictor',
-    description: `Design and implement efficient, modular software solutions utilizing data structures and algorithms. 
-                  Optimize performance, collaborate cross-functionally, and stay updated on emerging technologies for continual 
-                  improvement.`,
+    title: 'Pong Game',
+    description: `Developed Pong utilizing Object-Oriented Programming (OOP) in Python, leveraging the Turtle Graphics Library.`,
   }
 ];
 const TopProjects = () => {
