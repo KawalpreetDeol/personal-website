@@ -1,7 +1,7 @@
 module.exports = {
   env: {
-    es6: true,
-    node: true,
+    es6: false,
+    node: false,
   },
   parserOptions: {
     "ecmaVersion": 2018,
@@ -17,7 +17,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["**/*.spec.*"],
+      files: ["**/*.spec.*", "*"],
       env: {
         mocha: true,
       },

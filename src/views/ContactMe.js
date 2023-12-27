@@ -10,6 +10,12 @@ import {
 } from '@material-ui/core';
 import SocialMediaSidebar from '../components/SocialMediaSidebar';
 import socialMediaData from '../data/socialMediaData.json';
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import '../config/firebaseConfig';
+
+const functions = getFunctions();
+const submitContactForm = httpsCallable(functions, 'submitContactForm');
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -44,7 +50,25 @@ const ContactMe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic
+    console.log({ name: formData.name, email: formData.email, 
+      message: formData.message });
+    submitContactForm({ name: formData.name, email: formData.email, 
+                        message: formData.message })
+    .then((result) => {
+      // Read result of the Cloud Function.
+      /** @type {any} */
+      const data = result.data;
+      const sanitizedMessage = data.text;
+      console.log(result)
+    })
+    .catch((error) => {
+      // Getting the Error details.
+      const code = error.code;
+      const message = error.message;
+      const details = error.details;
+      // ...
+    });
+
     setSnackbarOpen(true);
   };
 
