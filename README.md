@@ -1,5 +1,4 @@
 # Personal Website
-
 Access Website @ https://kawalpreetdeol.com/
 
 ### Tools
@@ -18,3 +17,15 @@ Access Website @ https://kawalpreetdeol.com/
 5. Microservice (HTTPS Callable Function(s))
 6. Database (Firestore)
 
+### TODO
+- Toasts/Snackbar
+- Profile Picture Addition
+- Text Content Improvement
+- Screen Size Styling
+- Sitewide Theming
+- Transitions and Animations for improved UX
+- Dockerize
+- CI/CD Pipeline (Research Firebase built-int, else Jenkins)
+- Experiences Tab
+- Projects Tab
+- Blog Tab
