@@ -26,16 +26,19 @@ const projects = [
     title: 'Vehicle Telemetry Processing',
     description: `Built a pipeline to process vehicle telemetry data retrieved from S3 and store the results in a SQL
                   Database using Data Lake Gen2, Data Factory, and Functions App.`,
+    link: "https://github.com/KawalpreetDeol/vehicle-telemetry-processing"
   },
   {
     icon: 'tableau_software_logo.jpg',
     title: 'IMDB Data Analysis',
     description: `Analysis and visualization of the IMDB dataset using Tableau.`,
+    link: "https://github.com/KawalpreetDeol/imdb-analysis"
   },
   {
     icon: 'python_logo.jpg',
     title: 'Pong Game',
     description: `Developed Pong utilizing Object-Oriented Programming (OOP) in Python, leveraging the Turtle Graphics Library.`,
+    link: "https://github.com/KawalpreetDeol/pong-game"
   }
 ];
 const TopProjects = () => {
@@ -62,6 +65,12 @@ const TopProjects = () => {
                 </Typography>
                 <Typography variant="body1" color="textSecondary">
                   {project.description}
+                </Typography>
+                <hr style={{width: '80%', borderColor: '#d3d3d3', borderWidth: 'thin'}} />
+                <Typography variant="body1" color="textSecondary">
+                  {project.link != "" && (<a href={project.link} target="_blank" rel="noopener noreferrer">
+                      View Project
+                    </a>)}
                 </Typography>
               </CardContent>
             </Card>
