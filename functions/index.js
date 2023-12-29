@@ -12,7 +12,7 @@ exports.submitContactForm = functions.https.onCall(async (data, _) => {
   if (data.name.length > 30) {
     throw new functions.https.HttpsError(
         "failed-precondition",
-        `Name is too long. Keep it 30 or under. Currently ${data.name.length} characters`,
+        `Name is too long. Keep it 30 or under. Currently ${data.name.length} characters.`,
     );
   }
   // Invalid Character in Name
@@ -23,7 +23,7 @@ exports.submitContactForm = functions.https.onCall(async (data, _) => {
     if (data.name.includes(character)) {
       throw new functions.https.HttpsError(
           "failed-precondition",
-          `Name contains an invalid character: ${character}`,
+          `Name contains an invalid character: ${character}.`,
       );
     }
   }
@@ -32,7 +32,7 @@ exports.submitContactForm = functions.https.onCall(async (data, _) => {
     if (containsNumber(data.name)) {
         throw new functions.https.HttpsError(
             "failed-precondition",
-            `Name contains a number`,
+            `Name contains a number.`,
         );
     }
 

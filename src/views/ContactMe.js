@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -7,7 +8,9 @@ import {
   Snackbar,
   Container,
   Paper,
-} from '@material-ui/core';
+  Slide
+} from '@mui/material';
+import MuiAlert from '@mui/material/Alert';
 import SocialMediaSidebar from '../components/SocialMediaSidebar';
 import socialMediaData from '../data/socialMediaData.json';
 import { getFunctions, httpsCallable } from 'firebase/functions';
@@ -38,10 +41,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
+
+function TransitionUp(props) {
+  return <Slide {...props} direction="up" />;
+}
+
 const ContactMe = () => {
   const classes = useStyles();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSnackbarOpen, setSnackbarOpen] = useState(false);
+  const [severity, setSeverity] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -59,17 +72,20 @@ const ContactMe = () => {
       /** @type {any} */
       const data = result.data;
       const sanitizedMessage = data.text;
-      console.log(result)
+      setSeverity(true);
+      setSnackbarOpen(true);
     })
     .catch((error) => {
       // Getting the Error details.
       const code = error.code;
       const message = error.message;
       const details = error.details;
-      // ...
+      setSeverity(false);
+      setErrorMessage(message);
+      setSnackbarOpen(true);
     });
 
-    setSnackbarOpen(true);
+    
   };
 
   const handleSnackbarClose = () => {
@@ -77,7 +93,8 @@ const ContactMe = () => {
   };
 
   return (
-    <Container className={classes.root} style={{minHeight: '84vh', maxHeight: '100vh'}}>
+    <Container className={classes.root} style={{ minHeight: '84vh', maxHeight: '100vh', 
+                                                 display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       <Paper className={classes.formContainer}>
         <Typography variant="h5" align="center" gutterBottom>
           Contact Me
@@ -88,6 +105,7 @@ const ContactMe = () => {
             label="Name"
             name="name"
             variant="outlined"
+            style={{marginBottom: '7px'}}
             fullWidth
             value={formData.name}
             onChange={handleChange}
@@ -98,6 +116,7 @@ const ContactMe = () => {
             label="Email"
             name="email"
             type="email"
+            style={{marginBottom: '7px'}}
             variant="outlined"
             fullWidth
             value={formData.email}
@@ -111,6 +130,7 @@ const ContactMe = () => {
             multiline
             rows={4}
             variant="outlined"
+            style={{marginBottom: '7px'}}
             fullWidth
             value={formData.message}
             onChange={handleChange}
@@ -131,8 +151,13 @@ const ContactMe = () => {
         open={isSnackbarOpen}
         autoHideDuration={6000}
         onClose={handleSnackbarClose}
-        message="Form submitted successfully!"
-      />
+        anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
+        TransitionComponent={TransitionUp}
+      >
+        <Alert severity={severity ? "success" : "error"}>
+          {severity ? "Your form was successfully submitted." : `Your form needs a fix. ${errorMessage}`}
+        </Alert>
+      </Snackbar>
       <SocialMediaSidebar socialMediaData={socialMediaData} />
     </Container>
   );

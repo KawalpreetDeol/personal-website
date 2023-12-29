@@ -125,9 +125,10 @@ function TopBar() {
           </Typography>
           <Box width="33%" justifyContent="center" alignItems="center" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link to={page[1]} style={{ all: 'unset' }}>
+              <Link key={page[0]} to={page[1]} style={{ all: 'unset' }}>
                 <Button
-                  key={page[0]}
+                component={Link}
+                to={page[1]}
                   sx={{ my: 2, color: 'inherit', display: 'block' }}
                 >
                   {page[0]}
