@@ -16,6 +16,7 @@ import { Link } from 'react-router-dom';
 
 // const pages = [['Home', '/'], ['Experiences', 'experience'], ['Projects', 'projects']];
 const pages = [['Home', '/']];
+const pages_phone = [['Home', '/'], ['Contact Me', '/contact']];
 
 function TopBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -95,16 +96,20 @@ function TopBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {pages_phone.map((page) => (
                 <MenuItem key={page[0]} onClick={handleMenuClose}>
                   <Link to={page[1]} style={{ all: 'unset' }}>
                     <Typography textAlign="center">{page[0]}</Typography>
                   </Link>
                 </MenuItem>
               ))}
+              <MenuItem key={'resume'} onClick={handleDownload}>
+                <Typography textAlign="center">{"Resume"}</Typography>
+              </MenuItem>
+              
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <SelfImprovementIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
@@ -137,7 +142,7 @@ function TopBar() {
             ))}
           </Box>
 
-          <Box width="33%" display="flex" justifyContent="flex-end" alignItems="center" sx={{ flexGrow: 0 }}>
+          <Box width="33%" justifyContent="flex-end" alignItems="center" sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }}}>
             <Button
               key={"Resume"}
               sx={{ my: 2, color: 'inherit', display: 'block' }}
