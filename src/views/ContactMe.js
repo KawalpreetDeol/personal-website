@@ -61,26 +61,37 @@ const ContactMe = () => {
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('idle');
+  const [validationTimeout, setValidationTimeout] = useState(null);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    clearTimeout(validationTimeout);
     if (name === 'name') {
-      if (((! /^[a-zA-Z]+(?:\s[a-zA-Z]+)*$/.test(value)) || value.length > 30) && value.length != 0) {
-        setNameError(true);
-      }
-      else {
-        setNameError(false);
-      }
+      const newTimeout = setTimeout(() => {
+        if (((! /^[a-zA-Z]+(?:\s[a-zA-Z]+)*$/.test(value)) || value.length > 30) && value.length != 0) {
+          setNameError(true);
+        }
+        else {
+          setNameError(false);
+        }
+      }, 500);
+      setValidationTimeout(newTimeout);
     }
     else if (name === 'email') {
-      if ((! /(?:[a-z0-9+!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/i.test(value))
-       && value.length != 0) {
-        setEmailError(true);
-      }
-      else {
-        setEmailError(false);
-      }
+      const newTimeout = setTimeout(() => {
+        if ((! /(?:[a-z0-9+!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/i.test(value))
+        && value.length != 0) {
+          setEmailError(true);
+        }
+        else {
+          setEmailError(false);
+        }
+      }, 1000);
+      setValidationTimeout(newTimeout);
     }
-    setFormData({ ...formData, [name]: value });
+    
+    
   };
 
   const handleSubmit = async (e) => {
@@ -115,17 +126,6 @@ const ContactMe = () => {
       setSnackbarOpen(true);
     }
     
-  };
-
-  const getLoaderColor = () => {
-    switch (submitStatus) {
-      case 'success':
-        return 'green';
-      case 'failure':
-        return 'red';
-      default: // 'loading' or 'idle'
-        return 'primary';
-    }
   };
 
   const handleSnackbarClose = () => {
