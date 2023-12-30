@@ -45,7 +45,7 @@ function TopBar() {
 
   return (
     <AppBar position="fixed">
-      <Container maxWidth="xl">
+      <Container sx={{paddingLeft: '0px', paddingRight: '0px'}} maxWidth="xl">
         <Toolbar disableGutters>
           <Link to='/' style={{ all: 'unset', cursor: 'pointer' }}>
             <SelfImprovementIcon width="6%" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -69,65 +69,52 @@ function TopBar() {
             KAWALPREET DEOL
             </Link>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              color="inherit"
-              onClick={handleMenuOpen}
-              aria-label="menu"
-              size="large"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorEl}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorEl)}
-              onClose={handleMenuClose}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages_phone.map((page) => (
-                <MenuItem key={page[0]} onClick={handleMenuClose}>
-                  <Link to={page[1]} style={{ all: 'unset' }}>
-                    <Typography textAlign="center">{page[0]}</Typography>
-                  </Link>
-                </MenuItem>
-              ))}
-              <MenuItem key={'resume'} onClick={handleDownload}>
-                <Typography textAlign="center">{"Resume"}</Typography>
-              </MenuItem>
-              
-            </Menu>
-          </Box>
-          {/* <SelfImprovementIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              wordSpacing: '-.4rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            KAWALPREET DEOL
-          </Typography>
+          <Container sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'space-between'}}>
+            <Container sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'flex-start'}}>
+              <IconButton
+                color="inherit"
+                onClick={handleMenuOpen}
+                aria-label="menu"
+                size="large"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorEl)}
+                onClose={handleMenuClose}
+              >
+                {pages_phone.map((page) => (
+                  <MenuItem key={page[0]} onClick={handleMenuClose}>
+                    <Link to={page[1]} style={{ all: 'unset' }}>
+                      <Typography textAlign="center">{page[0]}</Typography>
+                    </Link>
+                  </MenuItem>
+                ))}
+                
+              </Menu>
+            </Container>
+            <Container sx={{ display: { xs: 'flex', md: 'none' }, justifyContent:'flex-end', alignItems: 'flex-end'}}>
+              <Button
+                  key={"ResumePhone"}
+                  sx={{ my: 2, color: 'inherit' }}
+                  onClick={handleDownload}
+                  
+                >
+                  {"Resume"}
+              </Button>
+            </Container>
+          </Container>
           <Box width="33%" justifyContent="center" alignItems="center" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Link key={page[0]} to={page[1]} style={{ all: 'unset' }}>
@@ -142,7 +129,7 @@ function TopBar() {
             ))}
           </Box>
 
-          <Box width="33%" justifyContent="flex-end" alignItems="center" sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }}}>
+          <Box width="33%" justifyContent="flex-end" alignItems="center" sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex'}}}>
             <Button
               key={"Resume"}
               sx={{ my: 2, color: 'inherit', display: 'block' }}
@@ -150,14 +137,16 @@ function TopBar() {
             >
               {"Resume"}
             </Button>
+          <span style={{display: { xs: 'none', md: 'block' }}}>
           <Link to='/contact' style={{ all: 'unset' }}>
             <Button
               key={"Contact Me"}
-              sx={{ my: 2, color: 'inherit', display: 'block' }}
+              sx={{ my: 2, color: 'inherit', display: { xs: 'none', md: 'block'} }}
             >
               {"Contact Me"}
             </Button>
           </Link>
+          </span>
           </Box>
         </Toolbar>
       </Container>
