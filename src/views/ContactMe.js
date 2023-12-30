@@ -9,7 +9,9 @@ import {
   Snackbar,
   Container,
   Paper,
-  Slide
+  Slide,
+  CircularProgress,
+  Backdrop
 } from '@mui/material';
 import MuiAlert from '@mui/material/Alert';
 import SocialMediaSidebar from '../components/SocialMediaSidebar';
@@ -58,7 +60,7 @@ const ContactMe = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
-
+  const [submitStatus, setSubmitStatus] = useState('idle');
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === 'name') {
@@ -81,19 +83,20 @@ const ContactMe = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (! (nameError || emailError)) {
+      setSubmitStatus('loading');
       submitContactForm({ name: formData.name, email: formData.email, 
         message: formData.message })
       .then((result) => {
       // Read result of the Cloud Function.
-      /** @type {any} */
       const data = result.data;
       const sanitizedMessage = data.text;
       setSeverity(true);
       setSnackbarOpen(true);
       setFormData({ name: '', email: '', message: '' });
+      setSubmitStatus('idle');
       })
       .catch((error) => {
       // Getting the Error details.
@@ -103,6 +106,7 @@ const ContactMe = () => {
       setSeverity(false);
       setErrorMessage(message);
       setSnackbarOpen(true);
+      setSubmitStatus('idle');
       });
     }
     else {
@@ -111,6 +115,17 @@ const ContactMe = () => {
       setSnackbarOpen(true);
     }
     
+  };
+
+  const getLoaderColor = () => {
+    switch (submitStatus) {
+      case 'success':
+        return 'green';
+      case 'failure':
+        return 'red';
+      default: // 'loading' or 'idle'
+        return 'primary';
+    }
   };
 
   const handleSnackbarClose = () => {
@@ -189,6 +204,9 @@ const ContactMe = () => {
         </Alert>
       </Snackbar>
       <SocialMediaSidebar socialMediaData={socialMediaData} />
+      <Backdrop className={classes.backdrop} open={submitStatus === 'loading'}>
+        <CircularProgress color="primary" />
+      </Backdrop>
     </Container>
   );
 };
