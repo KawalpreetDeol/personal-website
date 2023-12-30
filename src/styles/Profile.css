@@ -85,28 +85,110 @@
 
 /* xs to sm */
 @media screen and (max-width: 600px) {
+  .name {
+    font-size: 60px !important;
+  }
   .avatar {
-    width: 50px !important;
-    height: 50px !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .profile-container {
+    flex-direction: column;
+    min-width: 90vw;
+  }
+  .job-title {
+    font-size: 36px !important;
+  }
+  .description {
+    font-size: 18px !important;
+  }
+  .left-column {
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+  .right-column {
+    width: 90%;
+    display: none;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 
 /* sm to md */
 @media screen and (max-width: 900px) and (min-width: 600px) {
-
+  .name {
+    font-size: 90px !important;
+  }
+  .avatar {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .profile-container {
+    flex-direction: column;
+    min-width: 90vw;
+  }
+  .job-title {
+    font-size: 52px !important;
+  }
+  .description {
+    font-size: 32px !important;
+  }
+  .left-column {
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+  .right-column {
+    width: 90%;
+    display: none;
+    align-items: center !important;
+    justify-content: center !important;
+  }
 }
 /* md to lg */
 @media screen and (max-width: 1200px) and (min-width: 900px) {
-  /* .avatar {
-    width: calc(500px - 1vw) !important;
-    height: calc(500px - 1vw) !important;
-  } */
+  .name {
+    font-size: 92px !important;
+  }
+  .avatar {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .profile-container {
+    flex-direction: column;
+    min-width: 90vw;
+  }
+  .job-title {
+    font-size: 52px !important;
+  }
+  .description {
+    font-size: 32px !important;
+  }
+  .left-column {
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+  .right-column {
+    width: 90%;
+    display: none;
+    align-items: center !important;
+    justify-content: center !important;
+  }
 }
+@media screen and (max-width: 1370px) and (min-width: 1200px) {
+  .name {
+    font-size: 80px !important;
+  }
+  .profile-container {
+    min-width: 90vw;
+  }
+  .job-title {
+    font-size: 48px !important;
+  }
+  .description {
+    font-size: 30px !important;
+  }
+}
+/* @media screen and (max-width: 1536px) and (min-width: 1200px) {
 
-@media screen and (max-width: 1536px) and (min-width: 1200px) {
-  /* .avatar {
-    width: calc(500px - 1vw) !important;
-    height: calc(500px - 1vw) !important;
-  } */
-}
+} */
   
