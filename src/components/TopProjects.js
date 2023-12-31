@@ -8,6 +8,26 @@ import AnalyticsIcon from '@mui/icons-material/Analytics';
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: theme.spacing(4),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  cardContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'nowrap',
+    overflowX: 'auto',
+    alignItems: 'flex-start',
+    [theme.breakpoints.up('md')]: {
+      alignItems: 'center', // center alignment for medium screens and above
+    },
+    justifyContent: 'flex-start',
+    [theme.breakpoints.up('md')]: {
+      justifyContent: 'center', // center alignment for medium screens and above
+    },
+    gap: theme.spacing(2),
+    padding: theme.spacing(2),
+    maxWidth: '80vw'
   },
   card: {
     minWidth: 275,
@@ -47,38 +67,37 @@ const TopProjects = () => {
   return (
     <Container className={classes.root}>
       <Typography variant="h4" align="center" gutterBottom>
-        Top Projects
+      Top Projects
       </Typography>
 
-      <Grid container spacing={2}>
+      <div className={classes.cardContainer}>
         {projects.map((project, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card className={classes.card}>
-              <CardContent className={classes.cardContent}>
-                <img
-                  src={'./logos/' + project.icon} 
-                  alt=''
-                  style={{ width: '30px', height: '30px' }}
-                />
-                <Typography variant="h5" component="div" style={{padding: '10px'}}>
-                  {project.title}
-                </Typography>
-                <Typography variant="body1" color="textSecondary">
-                  {project.description}
-                </Typography>
-                <hr style={{width: '80%', borderColor: '#d3d3d3', borderWidth: 'thin'}} />
-                <Typography variant="body1" color="textSecondary">
-                  {project.link != "" && (<a href={project.link} target="_blank" rel="noopener noreferrer">
-                      View Project
-                    </a>)}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
+          <Card className={classes.card} key={index}>
+            <CardContent className={classes.cardContent}>
+              <img
+                src={'./logos/' + project.icon} 
+                alt=''
+                style={{ width: '30px', height: '30px' }}
+              />
+              <Typography variant="h5" component="div" style={{padding: '10px'}}>
+                {project.title}
+              </Typography>
+              <Typography variant="body1" color="textSecondary">
+                {project.description}
+              </Typography>
+              <hr style={{width: '80%', borderColor: '#d3d3d3', borderWidth: 'thin'}} />
+              <Typography variant="body1" color="textSecondary">
+                {project.link != "" && (<a href={project.link} target="_blank" rel="noopener noreferrer">
+                    View Project
+                  </a>)}
+              </Typography>
+            </CardContent>
+          </Card>
         ))}
-      </Grid>
+      </div>
     </Container>
   );
+  
 };
 
 export default TopProjects;

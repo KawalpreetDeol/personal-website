@@ -41,25 +41,25 @@ function Home() {
     <Container style={{ padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
                         maxWidth: '80vw', width: '80vw' }}>
       <Box ref={profileRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                     maxHeight: '100vh', opacity: profileInView ? 1 : 0, transition: 'opacity 3s',
+                                     maxHeight: '100vh', opacity: profileInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'},
                                      minHeight: '100vh' }}>
         <Profile />
       </Box>
       <hr style={{flexGrow: 1, maxWidth: '100%', width: '100%'}} />
-      <Box ref={servicesRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', 
-                                    maxHeight: '100vh', opacity: servicesInView ? 1 : 0, transition: 'opacity 3s',
+      <Box ref={servicesRef} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+                                    maxHeight: '100vh', opacity: servicesInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'},
                                     minHeight: '50vh' }}>
         <Services />
       </Box>
       <hr style={{flexGrow: 1, maxWidth: '100%',  width: '100%'}} />
-      <Box ref={projectsRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', 
-                                    maxHeight: '100vh', opacity: projectsInView ? 1 : 0, transition: 'opacity 3s',
+      <Box ref={projectsRef} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+                                    maxHeight: '100vh', opacity: projectsInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'},
                                     minHeight: '50vh' }}>
         <TopProjects />
       </Box>
       <hr style={{flexGrow: 1, maxWidth: '100%', width: '100%'}} />
-      <Box ref={timelineRef} style={{ opacity: timelineInView ? 1 : 0, transition: 'opacity 3s' }}>
-        <Typography variant="h4" align="center" gutterBottom style={{paddingTop: '40px', paddingBottom: '10px'}}>
+      <Box ref={timelineRef} style={{ opacity: timelineInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'} }}>
+        <Typography variant="h4" align="center" gutterBottom style={{marginTop: '40px', marginBottom: '10px'}}>
           Experiences
         </Typography>
         <TimelineFilter selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
