@@ -1,11 +1,10 @@
 import React from 'react';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+import { Paper, Typography } from '@mui/material';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from '@mui/lab';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
-import DescriptionIcon from '@mui/icons-material/Description';
-import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+// import DescriptionIcon from '@mui/icons-material/Description';
+// import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import ApprovalIcon from '@mui/icons-material/Approval';
 import CodeIcon from '@mui/icons-material/Code';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
@@ -24,7 +23,7 @@ const formatSkills = (skills) => skills.join(' · ');
 
 const VerticalTimeline = ({ data }) => {
   return (
-    <Timeline position="alternate">
+    <Timeline position="alternate" minWidth='100vw'>
       {data.map((event, index) => (
         <TimelineItem key={index}>
           <TimelineSeparator>

@@ -37,26 +37,26 @@ function Home() {
 
   return (
     <Container style={{ padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-                        maxWidth: '80vw', width: '80vw' }}>
+                        maxWidth: '100vw' }}>
       <Box ref={profileRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',
                                      maxHeight: '100vh', opacity: profileInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'},
                                      minHeight: '100vh' }}>
         <Profile />
       </Box>
-      <hr style={{flexGrow: 1, maxWidth: '100%', width: '100%'}} />
+      <hr style={{flexGrow: 1, maxWidth: '80%', width: '80%'}} />
       <Box ref={servicesRef} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
                                     maxHeight: '100vh', opacity: servicesInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'},
                                     minHeight: '50vh' }}>
         <Services />
       </Box>
-      <hr style={{flexGrow: 1, maxWidth: '100%',  width: '100%'}} />
+      <hr style={{flexGrow: 1, maxWidth: '80%',  width: '80%'}} />
       <Box ref={projectsRef} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
                                     maxHeight: '100vh', opacity: projectsInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'},
                                     minHeight: '50vh' }}>
         <TopProjects />
       </Box>
-      <hr style={{flexGrow: 1, maxWidth: '100%', width: '100%'}} />
-      <Box ref={timelineRef} style={{ opacity: timelineInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'} }}>
+      <hr style={{flexGrow: 1, maxWidth: '80%', width: '80%'}} />
+      <Box ref={timelineRef} style={{ minWidth: {xs: '90vw', md: '80vw'}, opacity: timelineInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'} }}>
         <Typography variant="h4" align="center" gutterBottom style={{marginTop: '40px', marginBottom: '10px'}}>
           Experiences
         </Typography>
