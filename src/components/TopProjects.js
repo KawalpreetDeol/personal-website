@@ -1,9 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardContent, Typography, Grid, Container } from '@mui/material';
-import CodeIcon from '@mui/icons-material/Code';
-import CloudIcon from '@mui/icons-material/Cloud';
-import AnalyticsIcon from '@mui/icons-material/Analytics';
+import { Card, CardContent, Typography, Container } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
   root: {

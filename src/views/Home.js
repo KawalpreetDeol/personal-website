@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import { Box, Divider } from '@mui/material';
+import { Container, Typography, Box } from '@mui/material';
 import VerticalTimeline from '../components/VerticalTimeline';
 import SocialMediaSidebar from '../components/SocialMediaSidebar';
 import TimelineFilter from '../components/TimelineFilter';
