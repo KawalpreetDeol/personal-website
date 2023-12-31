@@ -29,7 +29,7 @@ function App() {
             <TopBar/>
           </ThemeProvider>
         </div>
-        <div  style={{ flex: 1, overflowY: 'auto', marginTop: '70px'}}>
+        <div  style={{ flex: 1, overflowY: 'auto', overflowX: 'hidden', marginTop: '70px'}}>
         <div className='App-Body'>
             <Routes>
               <Route path="/" exact element={<Home/>} />

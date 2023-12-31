@@ -50,13 +50,13 @@ function Home() {
         <Services />
       </Box>
       <hr style={{flexGrow: 1, maxWidth: '80%',  width: '80%'}} />
-      <Box ref={projectsRef} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+      <Box ref={projectsRef} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
                                     maxHeight: '100vh', opacity: projectsInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'},
                                     minHeight: '50vh' }}>
         <TopProjects />
       </Box>
       <hr style={{flexGrow: 1, maxWidth: '80%', width: '80%'}} />
-      <Box ref={timelineRef} style={{ minWidth: {xs: '90vw', md: '80vw'}, opacity: timelineInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'} }}>
+      <Box ref={timelineRef} sx={{ minWidth: {xs: '90vw', md: '80vw'}, opacity: timelineInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'} }}>
         <Typography variant="h4" align="center" gutterBottom style={{marginTop: '40px', marginBottom: '10px'}}>
           Experiences
         </Typography>
