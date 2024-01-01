@@ -12,16 +12,16 @@ const TimelineFilter = ({ selectedFilters, setSelectedFilters }) => {
   };
 
   const handleAllChange = () => {
-    setSelectedFilters(selectedFilters.length === 5 ? [] : ['work', 'education', 'certification', 'course', 'project']);
+    setSelectedFilters(selectedFilters.length === 5 ? [] : ['work', 'education', 'certification', 'project']); //course
   };
 
   return (
     <Box style={{textAlign: 'center'}}>
       <FormControlLabel
-        control={<Checkbox checked={selectedFilters.length === 5} onChange={handleAllChange} />}
+        control={<Checkbox checked={selectedFilters.length === 4} onChange={handleAllChange} />}
         label="All"
       />
-      {['work', 'education', 'certification', 'course', 'project'].map((filter) => (
+      {['work', 'education', 'certification', 'project'].map((filter) => ( //course
         <FormControlLabel
           key={filter}
           control={<Checkbox checked={selectedFilters.includes(filter)} onChange={() => handleChange(filter)} />}
