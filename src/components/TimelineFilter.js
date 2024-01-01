@@ -12,7 +12,7 @@ const TimelineFilter = ({ selectedFilters, setSelectedFilters }) => {
   };
 
   const handleAllChange = () => {
-    setSelectedFilters(selectedFilters.length === 5 ? [] : ['work', 'education', 'certification', 'project']); //course
+    setSelectedFilters(selectedFilters.length === 4 ? [] : ['work', 'education', 'certification', 'project']); //course
   };
 
   return (
