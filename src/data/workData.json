@@ -5,6 +5,7 @@
         "skills": ["GCP", "Python", "Flask", "React.js", "Data Quality"],
         "startDate": "2022-09-15",
         "endDate": "2022-12-30",
+        "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "company": "Tealbook", 
         "logoURL": "tealbook_logo.jpg"
@@ -15,6 +16,7 @@
         "skills": ["GCP", "Python", "Data Quality", "Feature Modelling"],
         "startDate": "2022-01-15",
         "endDate": "2022-04-30",
+        "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "company": "Tealbook",
         "logoURL": "tealbook_logo.jpg"
@@ -25,6 +27,7 @@
         "skills": ["Test Driven Development (TDD)", "Product Design"],
         "startDate": "2021-05-15",
         "endDate": "2021-08-30",
+        "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "company": "PartnerStack",
         "logoURL": "partnerstack_logo.jpg"
@@ -35,6 +38,7 @@
         "skills": ["React.js", "Laravel", "MySQL", "Relational Modelling"],
         "startDate": "2020-09-15",
         "endDate": "2020-12-30",
+        "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "company": "Horizn",
         "logoURL": "horizon_studios_canada_logo.jpg"
@@ -45,6 +49,7 @@
         "skills": ["Vue.js", "MySQL", "API", "Relational Modelling"],
         "startDate": "2020-01-15",
         "endDate": "2020-04-30",
+        "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "company": "Venngo",
         "logoURL": "venngo_logo.jpg"
@@ -55,6 +60,7 @@
         "skills": ["JavaScript", "SQL", "MySQL", "Relational Modelling"],
         "startDate": "2019-05-15",
         "endDate": "2019-08-30",
+        "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "company": "City of Toronto",
         "logoURL": "city_of_toronto_logo.jpg"

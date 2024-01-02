@@ -9,12 +9,12 @@ import ApprovalIcon from '@mui/icons-material/Approval';
 import CodeIcon from '@mui/icons-material/Code';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
-const formatDateRange = (startDate, endDate) => {
+const formatDateRange = (startDate, endDate, status = "complete") => {
   const startDateFormat = new Date(startDate);
   const endDateFormat = new Date(endDate);
 
   const formattedStartDate = new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric' }).format(startDateFormat);
-  const formattedEndDate = endDateFormat ? new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric' }).format(endDateFormat) : 'Present';
+  const formattedEndDate = status == "complete" ? new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric' }).format(endDateFormat) : 'Present';
 
   return formattedStartDate == formattedEndDate ? `${formattedStartDate}` : `${formattedStartDate} - ${formattedEndDate}`;
 };
@@ -64,7 +64,7 @@ const VerticalTimeline = ({ data }) => {
               {event.type === 'work' && (
                 <>
                   <Typography variant="body1" color="text.secondary" display="block">
-                    {formatDateRange(event.startDate, event.endDate)}
+                    {formatDateRange(event.startDate, event.endDate, event.status)}
                     <br />
                     {event.company}
                   </Typography>
@@ -79,7 +79,7 @@ const VerticalTimeline = ({ data }) => {
               {event.type === 'education' && (
                 <>
                   <Typography variant="body1" color="text.secondary" display="block">
-                    {formatDateRange(event.startDate, event.endDate)}
+                    {formatDateRange(event.startDate, event.endDate, event.status)}
                   </Typography>
                   <Typography variant="body1" color="text.secondary" display="block">
                     {event.degree}
@@ -105,7 +105,7 @@ const VerticalTimeline = ({ data }) => {
               {event.type === 'course' && (
                 <>
                   <Typography variant="body1" color="text.secondary" display="block">
-                    {formatDateRange(event.startDate, event.endDate)}
+                    {formatDateRange(event.startDate, event.endDate, event.status)}
                     <br />
                     {event.agency}
                     <br />
@@ -129,7 +129,7 @@ const VerticalTimeline = ({ data }) => {
               {event.type === 'project' && (
                 <>
                 <Typography variant="body1" color="text.secondary" display="block">
-                  {formatDateRange(event.startDate, event.endDate)}
+                  {formatDateRange(event.startDate, event.endDate, event.status)}
                   <br />
                   {event.shortDesc}
                   <br />

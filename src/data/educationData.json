@@ -5,6 +5,7 @@
       "skills": ["Subject 1", "Subject 2", "Subject 3"],
       "startDate": "2017-09-15",
       "endDate": "2023-06-15",
+      "status": "complete",
       "degree": "BASc Computer Engineering, Honours, Co-op",
       "logoURL": "university_of_waterloo_logo.jpg"
     }

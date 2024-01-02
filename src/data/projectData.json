@@ -5,6 +5,7 @@
         "skills": ["Tableau"],
         "startDate": "2023-11-15",
         "endDate": "2023-11-30",
+        "status": "complete",
         "shortDesc": "Analysis of the IMDB Dataset",
         "projectURL": "https://github.com/KawalpreetDeol/imdb-analysis",
         "logoURL": "tableau_software_logo.jpg"
@@ -15,6 +16,7 @@
         "skills": ["Tableau"],
         "startDate": "2023-11-15",
         "endDate": "2023-11-29",
+        "status": "complete",
         "shortDesc": "Analysis on Boston's Real Estate Data",
         "projectURL": "https://github.com/KawalpreetDeol/boston-real-estate-analysis",
         "logoURL": "tableau_software_logo.jpg"
@@ -25,6 +27,7 @@
         "skills": ["Tableau"],
         "startDate": "2023-11-15",
         "endDate": "2023-11-28",
+        "status": "complete",
         "shortDesc": "Analysis on Canada's Foreign Direct Investment",
         "projectURL": "https://github.com/KawalpreetDeol/canada-fdi-analysis",
         "logoURL": "tableau_software_logo.jpg"
@@ -35,6 +38,7 @@
         "skills": ["Databricks", "Datalake Gen2", "Data Factory", "Key Vault"],
         "startDate": "2023-10-15",
         "endDate": "2023-10-30",
+        "status": "complete",
         "shortDesc": "Validate product data",
         "projectURL": "https://github.com/KawalpreetDeol/product-data-validation",
         "logoURL": "azure_logo_2.jpg"
@@ -45,8 +49,64 @@
         "skills": ["Data Factory", "Datalake Gen2", "Function App", "SQL Database"],
         "startDate": "2023-10-14",
         "endDate": "2023-10-29",
+        "status": "complete",
         "shortDesc": "Process smart vehicle telemetry data stored in Amazon S3",
         "projectURL": "https://github.com/KawalpreetDeol/vehicle-telemetry-processing",
         "logoURL": "azure_logo_2.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Portfolio Website",
+        "skills": ["React.js", "Material UI", "Firebase (Hosting, Functions, Firestore)"],
+        "startDate": "2023-11-15",
+        "endDate": "2024-01-30",
+        "status": "inprogress",
+        "shortDesc": "Building a portfolio website",
+        "projectURL": "https://github.com/KawalpreetDeol/personal-website",
+        "logoURL": "python_logo.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Banking Client Analysis",
+        "skills": ["Python", "Jupyter Notebook", "Pandas", "Seaborn", "Matplotlib", "Scikit-Learn"],
+        "startDate": "2023-12-15",
+        "endDate": "2024-01-30",
+        "status": "inprogress",
+        "shortDesc": "Performing exploratory data analysis on a bank dataset",
+        "projectURL": "https://github.com/KawalpreetDeol/banking-client-analysis",
+        "logoURL": "python_logo.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Turtle Crossing Game",
+        "skills": ["Python", "Turtle Graphics", "OOP", "Game Development"],
+        "startDate": "2023-08-15",
+        "endDate": "2023-08-30",
+        "status": "complete",
+        "shortDesc": "Built Turtle Crossing",
+        "projectURL": "https://github.com/KawalpreetDeol/turtle-crossing-game",
+        "logoURL": "python_logo.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Snake Game",
+        "skills": ["Python", "Turtle Graphics", "OOP", "Game Development"],
+        "startDate": "2023-08-15",
+        "endDate": "2023-08-30",
+        "status": "complete",
+        "shortDesc": "Built Snake",
+        "projectURL": "https://github.com/KawalpreetDeol/snake-game",
+        "logoURL": "python_logo.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Pong Game",
+        "skills": ["Python", "Turtle Graphics", "OOP", "Game Development"],
+        "startDate": "2023-08-15",
+        "endDate": "2023-08-30",
+        "status": "complete",
+        "shortDesc": "Built Pong",
+        "projectURL": "https://github.com/KawalpreetDeol/pong-game",
+        "logoURL": "python_logo.jpg"
     }
 ]
