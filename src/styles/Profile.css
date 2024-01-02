@@ -9,7 +9,7 @@
   
   .left-column {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 0px; /* make 20px after profile pic added */
   }
   
   .name {
@@ -67,7 +67,7 @@
 
 .right-column {
   width: 45%;
-  display: flex;
+  display: none; /* make flex after profile picture added*/
   align-items: flex-end !important;
   justify-content: flex-end !important;
 }
@@ -117,7 +117,7 @@
 /* sm to md */
 @media screen and (max-width: 900px) and (min-width: 600px) {
   .name {
-    font-size: 90px !important;
+    font-size: 68px !important;
   }
   .avatar {
     width: 150px !important;
@@ -128,10 +128,10 @@
     min-width: 90vw;
   }
   .job-title {
-    font-size: 52px !important;
+    font-size: 40px !important;
   }
   .description {
-    font-size: 32px !important;
+    font-size: 22px !important;
   }
   .left-column {
     padding-right: 0px;
@@ -147,7 +147,7 @@
 /* md to lg */
 @media screen and (max-width: 1200px) and (min-width: 900px) {
   .name {
-    font-size: 92px !important;
+    font-size: 80px !important;
   }
   .avatar {
     width: 150px !important;
@@ -158,10 +158,10 @@
     min-width: 90vw;
   }
   .job-title {
-    font-size: 52px !important;
+    font-size: 48px !important;
   }
   .description {
-    font-size: 32px !important;
+    font-size: 26px !important;
   }
   .left-column {
     padding-right: 0px;
@@ -186,6 +186,18 @@
   }
   .description {
     font-size: 30px !important;
+  }
+
+  /* remove after profile picture added */
+  .left-column {
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+  .right-column {
+    width: 90%;
+    display: none;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 /* @media screen and (max-width: 1536px) and (min-width: 1200px) {
