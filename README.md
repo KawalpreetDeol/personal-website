@@ -3,11 +3,8 @@ Access Website @ https://kawalpreetdeol.com/
 
 ### Tools
 1. React.js (Core Application)
-2. Material UI (Styling and Theming)
-3. Firebase
-    a. Hosting
-    b. Cloud Functions
-    c. Firestore
+2. Material UI (Styling, Theming, Components, and Icons)
+3. Firebase (Hosting, Cloud Functions, Firestore)
 
 ### Architectures, Design and Concepts
 1. Progressive Web App (PWA) Architecture (Firebase hosted web app, with a Firestore Database)
@@ -18,14 +15,14 @@ Access Website @ https://kawalpreetdeol.com/
 6. Database (Firestore)
 
 ### TODO
-- Toasts/Snackbar
 - Profile Picture Addition
-- Text Content Improvement
-- Screen Size Styling
-- Sitewide Theming
+- Sitewide Theming + Dark Mode
+- Timeline Remodelling
 - Transitions and Animations for improved UX
 - Dockerize
+- Testing Setup
 - CI/CD Pipeline (Research Firebase built-int, else Jenkins)
 - Experiences Tab
 - Projects Tab
 - Blog Tab
+- Detailed About Me Tab
