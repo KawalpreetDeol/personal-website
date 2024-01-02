@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     minWidth: 275,
+    maxWidth: 350,
     margin: theme.spacing(2),
   },
   cardContent: {
@@ -40,21 +41,23 @@ const useStyles = makeStyles((theme) => ({
 const projects = [
   {
     icon: 'azure_logo_2.jpg',
-    title: 'Vehicle Telemetry Processing',
-    description: `Built a pipeline to process vehicle telemetry data retrieved from S3 and store the results in a SQL
-                  Database using Data Lake Gen2, Data Factory, and Functions App.`,
+    title: 'Telemetry Processing',
+    description: `Built a pipeline to process vehicle telemetry data retrieved from Amazon S3 and store the results in an Azure 
+                  SQL Database using Azure Data Lake Gen2, Azure Data Factory, and Azure Functions App.`,
     link: "https://github.com/KawalpreetDeol/vehicle-telemetry-processing"
   },
   {
     icon: 'tableau_software_logo.jpg',
     title: 'IMDB Data Analysis',
-    description: `Analysis and visualization of the IMDB dataset using Tableau.`,
+    description: `Analysis and visualization of the IMDB dataset using Tableau. Explored relationships between Facebook Likes 
+                  and IMDB Score, Facebook Likes and Revenue, Content Rating and Revenue, and Budget over Time by Genre.`,
     link: "https://github.com/KawalpreetDeol/imdb-analysis"
   },
   {
     icon: 'python_logo.jpg',
     title: 'Pong Game',
-    description: `Developed Pong utilizing Object-Oriented Programming (OOP) in Python, leveraging the Turtle Graphics Library.`,
+    description: `Developed Pong utilizing Object-Oriented Programming (OOP) in Python, leveraging the Turtle Graphics Library. 
+                  This involved designing game mechanics, a user interface, and implementing responsive controls.`,
     link: "https://github.com/KawalpreetDeol/pong-game"
   }
 ];

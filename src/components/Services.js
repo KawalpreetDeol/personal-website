@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     minWidth: 275,
+    maxWidth: 350,
     margin: theme.spacing(2),
   },
   cardContent: {
@@ -56,12 +57,12 @@ const services = [
                   data pipelines, optimize data processing, and enhance data accessibility, fostering innovation and 
                   data-driven solutions within enterprises.`,
   },
-  {
-    icon: 'AnalyticsIcon',
-    title: 'Data Analyst',
-    description: `Extract actionable insights from complex datasets, employing statistical and analytical techniques. Interpret 
-                  trends, create dynamic visualizations, provide valuable business intelligence, and contribute to informed decision-making processes within organizations.`,
-  },
+  // {
+  //   icon: 'AnalyticsIcon',
+  //   title: 'Data Analyst',
+  //   description: `Extract actionable insights from complex datasets, employing statistical and analytical techniques. Interpret 
+  //                 trends, create dynamic visualizations, provide valuable business intelligence, and contribute to informed decision-making processes within organizations.`,
+  // },
   // {
   //   icon: 'CloudIcon',
   //   title: 'Cloud Architect',

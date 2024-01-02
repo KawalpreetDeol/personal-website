@@ -5,7 +5,7 @@ import '../styles/Profile.css';
 const Profile = () => {
   const [jobTitle, setJobTitle] = useState('');
   const [cursorVisible, setCursorVisible] = useState(true);
-  const jobTitles = ['Software Engineer', 'Data Engineer', 'Data Analyst'];
+  const jobTitles = ['Software Engineer', 'Data Engineer'];
 
   useEffect(() => {
     let currentIndex = 0;
@@ -63,9 +63,9 @@ const Profile = () => {
           {cursorVisible && <span className="cursor">|</span>}
         </Typography>
         <Typography variant="body1" className="description">
-          I am passionate about solving real-world problems with efficient and effective data and software solutions.
-          Seeking meaningful projects and innovative partnerships, I am eager to bring my insights and talents to 
-          a team or project that values excellence and creativity. 
+          Welcome to my professional portfolio. I enjoy developing intuitive and effective solutions to solve complex problems. 
+          With a keen eye for stakeholder needs and a penchant for critical thinking, I bring a customer-focused approach to every project. 
+          Explore my portfolio to understand how my expertise can benefit your company. I am eager to join a team where I can make a meaningful impact.
         </Typography>
       </Box>
 
