@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Box, Typography, Avatar } from '@mui/material';
 import '../styles/Profile.css';
 
+import SocialMediaBox from '../components/SocialMediaBox';
+import socialMediaData from '../data/socialMediaData.json';
+
 const Profile = () => {
   const [jobTitle, setJobTitle] = useState('');
   const [cursorVisible, setCursorVisible] = useState(true);
@@ -68,13 +71,17 @@ const Profile = () => {
           Explore my portfolio to understand how my expertise can benefit your company. I am eager to join a team where I can make a meaningful impact.
         </Typography>
       </Box>
-
+      <div style={{paddingTop: '50px'}}>
+        <SocialMediaBox socialMediaData={socialMediaData}/>
+      </div>
+      
       {/* Right Column */}
       <Box className="right-column">
         <Avatar className="avatar">
           <img src="profile_pic.jpg" alt="Profile" className="avatar-image" />
         </Avatar>
       </Box>
+      
     </Box>
   );
 };

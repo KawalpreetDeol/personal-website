@@ -63,7 +63,7 @@ function Home() {
         <TimelineFilter selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
         <VerticalTimeline data={sortedData} />
       </Box>
-      <SocialMediaSidebar socialMediaData={socialMediaData} />
+      <SocialMediaSidebar socialMediaData={socialMediaData}/>
     </Container>
   );
 }

@@ -8,13 +8,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-const SidebarContainer = styled(Box)(({ theme }) => ({
-  position: 'fixed',
-  bottom: 0,
-  left: 0,
+const SocialMediaContainer = styled(Box)(({ theme }) => ({
   backgroundColor: 'rgba(255, 255, 255, 0.5)',
   padding: theme.spacing(2),
-  flexDirection: 'column',
+  flexDirection: 'row',
+  justifyContent: 'center',
   alignItems: 'center',
 }));
 
@@ -30,9 +28,9 @@ const VerticalLine = styled('div')(({ theme }) => ({
   margin: '0 8px', // Adjust the margin as needed
 }));
 
-const SocialMediaSidebar = ({ socialMediaData }) => {
+const SocialMediaBox = ({ socialMediaData }) => {
   return (
-    <SidebarContainer sx={{display: {xs: 'none', md: 'flex'}}}>
+    <SocialMediaContainer sx={{display: {xs: 'flex', md: 'none'}}}>
       {socialMediaData.map((media, index) => (
           <LargerIconButton href={media.url} key={index} target="_blank" rel="noopener noreferrer">
             {media.icon === 'LinkedInIcon' && <LinkedInIcon fontSize='inherit'/>}
@@ -41,9 +39,8 @@ const SocialMediaSidebar = ({ socialMediaData }) => {
             {media.icon === 'InstagramIcon' && <InstagramIcon fontSize='inherit'/>}
           </LargerIconButton>
       ))}
-      <VerticalLine />
-    </SidebarContainer>
+    </SocialMediaContainer>
   );
 };
 
-export default SocialMediaSidebar;
+export default SocialMediaBox;
