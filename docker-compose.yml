@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  react-app:
+    container_name: personal-website
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    networks:
+      - react-network
+networks:
+  react-network:
+    driver: bridge
