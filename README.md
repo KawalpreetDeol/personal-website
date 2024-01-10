@@ -18,10 +18,9 @@ Access Website @ https://kawalpreetdeol.com/
 - Profile Picture Addition
 - Sitewide Theming + Dark Mode
 - Timeline Remodelling
+- Social Media Icon on Small Screen UX improvement
 - Transitions and Animations for improved UX
-- Dockerize
-- Testing Setup
-- CI/CD Pipeline (Research Firebase built-int, else Jenkins)
+- CI/CD Pipeline (Jenkins)
 - Experiences Tab
 - Projects Tab
 - Blog Tab
