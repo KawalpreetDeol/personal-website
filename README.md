@@ -20,7 +20,7 @@ Access Website @ https://kawalpreetdeol.com/
 - Timeline Remodelling
 - Social Media Icon on Small Screen UX improvement
 - Transitions and Animations for improved UX
-- CI/CD Pipeline (Jenkins)
+- Separate Production and Dev Environments Completely (Look to use a local NoSQL database to mock Firestore)
 - Experiences Tab
 - Projects Tab
 - Blog Tab

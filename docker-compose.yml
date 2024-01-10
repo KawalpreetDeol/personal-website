@@ -9,6 +9,15 @@ services:
       - 80:80
     networks:
       - react-network
+  jenkins:
+    build:
+      context: .
+      dockerfile: jenkins.Dockerfile
+    volumes:
+      - "$PWD/jenkins_home:/var/jenkins_home"
+      - "$PWD:/app"
+    ports:
+      - 8080:8080
 networks:
   react-network:
     driver: bridge

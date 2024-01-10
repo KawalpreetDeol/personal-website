@@ -14,7 +14,7 @@ firebase-debug.log
 
 # production
 /build
-
+jenkins_home
 # misc
 .DS_Store
 .env.local
