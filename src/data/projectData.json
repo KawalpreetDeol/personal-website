@@ -108,5 +108,16 @@
         "shortDesc": "Built Pong",
         "projectURL": "https://github.com/KawalpreetDeol/pong-game",
         "logoURL": "python_logo.jpg"
+    },
+    {
+        "type": "project",
+        "title": "Stats Utils",
+        "skills": ["Python", "Statistics and Probability", "OOP", "PyPi"],
+        "startDate": "2024-01-15",
+        "endDate": "2024-01-30",
+        "status": "complete",
+        "shortDesc": "Built and published a math package to PyPi",
+        "projectURL": "https://github.com/KawalpreetDeol/stats-utils",
+        "logoURL": "python_logo.jpg"
     }
 ]

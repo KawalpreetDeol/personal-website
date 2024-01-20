@@ -55,11 +55,18 @@ const projects = [
   },
   {
     icon: 'python_logo.jpg',
-    title: 'Pong Game',
-    description: `Developed Pong utilizing Object-Oriented Programming (OOP) in Python, leveraging the Turtle Graphics Library. 
-                  This involved designing game mechanics, a user interface, and implementing responsive controls.`,
-    link: "https://github.com/KawalpreetDeol/pong-game"
+    title: 'Stats Utils',
+    description: `Developed and published a Python package on PyPi for calculating Binomial and Gaussian distributions, using
+                  Object-Oriented Programming (OOP) concepts to modularize and abstract the code.`,
+    link: "https://github.com/KawalpreetDeol/stats-utils"
   }
+  // {
+  //   icon: 'python_logo.jpg',
+  //   title: 'Pong Game',
+  //   description: `Developed Pong utilizing Object-Oriented Programming (OOP) in Python, leveraging the Turtle Graphics Library. 
+  //                 This involved designing game mechanics, a user interface, and implementing responsive controls.`,
+  //   link: "https://github.com/KawalpreetDeol/pong-game"
+  // }
 ];
 const TopProjects = () => {
   const classes = useStyles();
