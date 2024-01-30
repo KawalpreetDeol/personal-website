@@ -3,8 +3,9 @@ Access Website @ https://kawalpreetdeol.com/
 
 ### Tools
 1. React.js (Core Application)
-2. Material UI (Styling, Theming, Components, and Icons)
-3. Firebase (Hosting, Cloud Functions, Firestore)
+2. Node.js (Cloud Functions Backend)
+3. Material UI (Styling, Theming, Components, and Icons)
+4. Firebase (Hosting, Cloud Functions, Firestore)
 
 ### Architectures, Design and Concepts
 1. Progressive Web App (PWA) Architecture (Firebase hosted web app, with a Firestore Database)
