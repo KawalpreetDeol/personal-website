@@ -7,6 +7,8 @@
         "endDate": "2022-12-30",
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
+        "positionType": "Co-op",
+        "timeType": "Full-Time",
         "company": "Tealbook", 
         "logoURL": "tealbook_logo.jpg"
     },
@@ -18,6 +20,8 @@
         "endDate": "2022-04-30",
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
+        "positionType": "Co-op",
+        "timeType": "Full-Time",
         "company": "Tealbook",
         "logoURL": "tealbook_logo.jpg"
     },
@@ -29,6 +33,8 @@
         "endDate": "2021-08-30",
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
+        "positionType": "Co-op",
+        "timeType": "Full-Time",
         "company": "PartnerStack",
         "logoURL": "partnerstack_logo.jpg"
     },
@@ -40,6 +46,8 @@
         "endDate": "2020-12-30",
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
+        "positionType": "Co-op",
+        "timeType": "Full-Time",
         "company": "Horizn",
         "logoURL": "horizon_studios_canada_logo.jpg"
     },
@@ -51,6 +59,8 @@
         "endDate": "2020-04-30",
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
+        "positionType": "Co-op",
+        "timeType": "Full-Time",
         "company": "Venngo",
         "logoURL": "venngo_logo.jpg"
     },
@@ -62,8 +72,62 @@
         "endDate": "2019-08-30",
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
+        "positionType": "Co-op",
+        "timeType": "Full-Time",
         "company": "City of Toronto",
         "logoURL": "city_of_toronto_logo.jpg"
+    },
+    {
+        "type": "work",
+        "title": "AutoCAD Drafter",
+        "skills": ["AutoCAD", "Leadership", "Problem Solving", "Code Compliance"],
+        "startDate": "2019-05-15",
+        "endDate": "2019-08-30",
+        "status": "complete",
+        "location": {"city": "Mississauga", "state": "Ontario"},
+        "positionType": "Contract",
+        "timeType": "Full-Time",
+        "company": "MEM Engineering Inc.",
+        "logoURL": "mem_logo.jpg"
+    },
+    {
+        "type": "work",
+        "title": "Logistics Processor",
+        "skills": ["SAP", "Problem Solving"],
+        "startDate": "2018-05-15",
+        "endDate": "2018-08-30",
+        "status": "complete",
+        "location": {"city": "Toronto", "state": "Ontario"},
+        "positionType": "Co-op",
+        "timeType": "Full-Time",
+        "company": "SCI Group Inc.",
+        "logoURL": "sci_group_inc_logo.jpg"
+    },
+    {
+        "type": "work",
+        "title": "Swim Instructor",
+        "skills": ["Leadership", "Problem Solving"],
+        "startDate": "2016-10-15",
+        "endDate": "2017-08-30",
+        "status": "complete",
+        "location": {"city": "Markham", "state": "Ontario"},
+        "positionType": "Permanent",
+        "timeType": "Part-Time",
+        "company": "City of Markham",
+        "logoURL": "city_of_markham_logo.jpg"
+    },
+    {
+        "type": "work",
+        "title": "Swim Instructor",
+        "skills": ["Leadership", "Problem Solving"],
+        "startDate": "2016-01-15",
+        "endDate": "2017-08-30",
+        "status": "complete",
+        "location": {"city": "Markham", "state": "Ontario"},
+        "positionType": "Permanent",
+        "timeType": "Part-Time",
+        "company": "City of Markham",
+        "logoURL": "city_of_markham_logo.jpg"
     }
 ]
   

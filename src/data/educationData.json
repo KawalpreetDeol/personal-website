@@ -2,12 +2,23 @@
     {
       "type": "education",
       "title": "University of Waterloo",
-      "skills": ["Subject 1", "Subject 2", "Subject 3"],
+      "skills": ["Software Design and Architecture", "Computer Networks", "Database Systems", "Data Structures and Algorithms", "Algorithm Design and Analysis", "Adaptive and Cooperative Algorithms", "Programming for Performance",
+                "Distributed Systems", "Probability Theory and Statistics", "Discrete Mathematics"],
       "startDate": "2017-09-15",
       "endDate": "2023-06-15",
       "status": "complete",
       "degree": "BASc Computer Engineering, Honours, Co-op",
       "logoURL": "university_of_waterloo_logo.jpg"
+    },
+    {
+      "type": "education",
+      "title": "International Baccalaureate (IB)",
+      "skills": ["Microeconomics", "Macroeconomics", "International Economics", "English and Literature", "Chemistry", "Biology", "French", "Calculus", "Vectors", "Probability Theory and Statistics", "Functions"],
+      "startDate": "2015-09-01",
+      "endDate": "2017-06-15",
+      "status": "complete",
+      "degree": "International Baccalaureate (IB) Diploma",
+      "logoURL": "ib_logo.jpg"
     }
 ]
   
