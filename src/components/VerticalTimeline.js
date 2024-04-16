@@ -19,7 +19,7 @@ const formatDateRange = (startDate, endDate, status = "complete") => {
   return formattedStartDate == formattedEndDate ? `${formattedStartDate}` : `${formattedStartDate} - ${formattedEndDate}`;
 };
 
-const formatSkills = (skills) => skills.join(' · ');
+const formatSkills = (skills) => skills.join(', ');
 
 const VerticalTimeline = ({ data }) => {
   return (
@@ -63,6 +63,9 @@ const VerticalTimeline = ({ data }) => {
               </div>
               {event.type === 'work' && (
                 <>
+                  <Typography variant="body1" color="text.secondary" display="block">
+                    {`${event.positionType} · ${event.timeType}`}
+                  </Typography>
                   <Typography variant="body1" color="text.secondary" display="block">
                     {formatDateRange(event.startDate, event.endDate, event.status)}
                     <br />

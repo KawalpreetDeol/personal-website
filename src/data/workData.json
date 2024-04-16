@@ -8,7 +8,7 @@
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "positionType": "Co-op",
-        "timeType": "Full-Time",
+        "timeType": "Full-time",
         "company": "Tealbook", 
         "logoURL": "tealbook_logo.jpg"
     },
@@ -21,7 +21,7 @@
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "positionType": "Co-op",
-        "timeType": "Full-Time",
+        "timeType": "Full-time",
         "company": "Tealbook",
         "logoURL": "tealbook_logo.jpg"
     },
@@ -34,7 +34,7 @@
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "positionType": "Co-op",
-        "timeType": "Full-Time",
+        "timeType": "Full-time",
         "company": "PartnerStack",
         "logoURL": "partnerstack_logo.jpg"
     },
@@ -47,7 +47,7 @@
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "positionType": "Co-op",
-        "timeType": "Full-Time",
+        "timeType": "Full-time",
         "company": "Horizn",
         "logoURL": "horizon_studios_canada_logo.jpg"
     },
@@ -60,7 +60,7 @@
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "positionType": "Co-op",
-        "timeType": "Full-Time",
+        "timeType": "Full-time",
         "company": "Venngo",
         "logoURL": "venngo_logo.jpg"
     },
@@ -73,7 +73,7 @@
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "positionType": "Co-op",
-        "timeType": "Full-Time",
+        "timeType": "Full-time",
         "company": "City of Toronto",
         "logoURL": "city_of_toronto_logo.jpg"
     },
@@ -86,7 +86,7 @@
         "status": "complete",
         "location": {"city": "Mississauga", "state": "Ontario"},
         "positionType": "Contract",
-        "timeType": "Full-Time",
+        "timeType": "Full-time",
         "company": "MEM Engineering Inc.",
         "logoURL": "mem_logo.jpg"
     },
@@ -99,7 +99,7 @@
         "status": "complete",
         "location": {"city": "Toronto", "state": "Ontario"},
         "positionType": "Co-op",
-        "timeType": "Full-Time",
+        "timeType": "Full-time",
         "company": "SCI Group Inc.",
         "logoURL": "sci_group_inc_logo.jpg"
     },
@@ -112,7 +112,7 @@
         "status": "complete",
         "location": {"city": "Markham", "state": "Ontario"},
         "positionType": "Permanent",
-        "timeType": "Part-Time",
+        "timeType": "Part-time",
         "company": "City of Markham",
         "logoURL": "city_of_markham_logo.jpg"
     },
@@ -125,7 +125,7 @@
         "status": "complete",
         "location": {"city": "Markham", "state": "Ontario"},
         "positionType": "Permanent",
-        "timeType": "Part-Time",
+        "timeType": "Part-time",
         "company": "City of Markham",
         "logoURL": "city_of_markham_logo.jpg"
     }
