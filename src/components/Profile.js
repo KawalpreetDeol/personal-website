@@ -66,9 +66,9 @@ const Profile = () => {
           {cursorVisible && <span className="cursor">|</span>}
         </Typography>
         <Typography variant="body1" className="description">
-          Hi, I'm Kawal! Welcome to my professional portfolio. I enjoy developing intuitive and effective solutions to solve complex problems. 
-          With a keen eye for stakeholder needs and a penchant for critical thinking, I bring a customer-focused approach to every project. 
-          Explore my portfolio to understand how my expertise can benefit your company. I'm eager to join a team where I can make a meaningful impact.
+          Hi, I'm Kawal! Welcome to my professional portfolio. I thrive on crafting intuitive and effective solutions to complex challenges. 
+          With a sharp focus on stakeholder needs and a strong capacity for critical thinking, I adopt a customer-centric approach in every project. 
+          Explore my portfolio to see how my expertise can advance your company’s objectives. I'm eager to join a team where I can deliver meaningful impact.
         </Typography>
       </Box>
       <div style={{paddingTop: '50px'}}>

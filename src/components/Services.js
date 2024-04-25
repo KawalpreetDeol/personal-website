@@ -58,19 +58,19 @@ const services = [
                   data pipelines, optimize data processing, and enhance data accessibility, fostering innovation and 
                   data-driven solutions within enterprises.`,
   },
-  {
-    icon: 'LayersIcon',
-    title: 'Full-Stack Engineer',
-    description: `Design and develop front-end and back-end systems, integrating user-facing elements with server-side logic. Integrate
-                  and build API endpoints. Ensure seamless application performance, troubleshoot and optimize code, and adapt technologies 
-                  for cohesive solutions.`,
-  }
   // {
-  //   icon: 'AnalyticsIcon',
-  //   title: 'Data Analyst',
-  //   description: `Extract actionable insights from complex datasets, employing statistical and analytical techniques. Interpret 
-  //                 trends, create dynamic visualizations, provide valuable business intelligence, and contribute to informed decision-making processes within organizations.`,
+  //   icon: 'LayersIcon',
+  //   title: 'Full-Stack Engineer',
+  //   description: `Design and develop front-end and back-end systems, integrating user-facing elements with server-side logic. Integrate
+  //                 and build API endpoints. Ensure seamless application performance, troubleshoot and optimize code, and adapt technologies 
+  //                 for cohesive solutions.`,
   // },
+  {
+    icon: 'AnalyticsIcon',
+    title: 'Data Analyst',
+    description: `Extract actionable insights from complex datasets, employing statistical and analytical techniques. Interpret 
+                  trends, create dynamic visualizations, provide valuable business intelligence, and contribute to informed decision-making processes within organizations.`,
+  },
   // {
   //   icon: 'CloudIcon',
   //   title: 'Cloud Architect',
@@ -95,7 +95,7 @@ const Services = () => {
           <Card className={classes.card} key={index}>
             <CardContent className={classes.cardContent}>
               {service.icon === 'CodeIcon' ? <CodeIcon style={{width: '30px', height: '30px'}}/> : service.icon === 'CloudIcon' ? 
-              <CloudIcon style={{width: '30px', height: '30px'}}/> : <LayersIcon  style={{width: '30px', height: '30px'}}/>}
+              <CloudIcon style={{width: '30px', height: '30px'}}/> : <AnalyticsIcon  style={{width: '30px', height: '30px'}}/>}
               <Typography variant="h5" component="div" style={{padding: '10px'}}>
                 {service.title}
               </Typography>
