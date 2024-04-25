@@ -15,6 +15,7 @@ import courseData from '../data/courseData.json';
 
 import socialMediaData from '../data/socialMediaData.json';
 import TopProjects from '../components/TopProjects';
+import TopSkills from '../components/TopSkills';
 
 function Home() {
   const [selectedFilters, setSelectedFilters] = useState(['work', 'education', 'certification']);
@@ -22,6 +23,7 @@ function Home() {
   const [servicesRef, servicesInView] = useInView(); // Use useInView for Skills
   const [timelineRef, timelineInView] = useInView(); // Use useInView for Timeline
   const [projectsRef, projectsInView] = useInView(); // Use useInView for Projects
+  const [skillsRef, skillsInView] = useInView(); // Use useInView for Skills
 
   // Combine all data based on the selected filter
   const filteredData = (() => {
@@ -50,6 +52,12 @@ function Home() {
         <Services />
       </Box>
       <hr style={{flexGrow: 1, maxWidth: '80%',  width: '80%'}} />
+      <Box ref={skillsRef} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+                                    maxHeight: '100vh', opacity: skillsInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'},
+                                    minHeight: '50vh' }}>
+        <TopSkills />
+      </Box>
+      <hr style={{flexGrow: 1, maxWidth: '80%', width: '80%'}} />
       <Box ref={projectsRef} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
                                     maxHeight: '100vh', opacity: projectsInView ? 1 : 0, transition: {xs: 'opacity 2s', md: 'opacity 3s'},
                                     minHeight: '50vh' }}>

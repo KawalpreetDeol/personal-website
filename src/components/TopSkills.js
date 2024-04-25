@@ -1,33 +1,116 @@
 import React from 'react';
-import { Card, CardContent, Typography, Container } from '@mui/material';
+import { Card, CardContent, Box, Typography, Container } from '@mui/material';
 import skillsData from '../data/topSkillsData.json';
 
-const Services = () => {
+const TopSkills = () => {
 
   return (
-    <Container className={classes.root}>
-      <Typography variant="h4" align="center" gutterBottom>
-        Services
-      </Typography>
+    <Container sx={{width: '100vw', marginTop: '25px', marginBottom: '25px'}}>
+        <Typography variant="h4" align="center" gutterBottom>
+        Top Skills
+        </Typography>
+        <Container sx={{display: 'flex', flexDirection: 'row'}}>
+            <Container>
+                {/* Languages */}
+                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+                    <Typography variant="h5" color="textSecondary">
+                        Languages
+                    </Typography>
+                    {skillsData[0].languages.map((txt, index) => (
+                        <Typography variant="body1" color="textSecondary" key={'language_'+index}>
+                            {txt}
+                        </Typography>
+                    ))}
+                </Box>
+                {/* Frameworks */}
+                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+                    <Typography variant="h5" color="textSecondary">
+                        Frameworks
+                    </Typography>
+                    {skillsData[0].frameworks.map((txt, index) => (
+                        <Typography variant="body1" color="textSecondary" key={'language_'+index}>
+                            {txt}
+                        </Typography>
+                    ))}
+                </Box>
+                {/* Databases */}
+                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+                    <Typography variant="h5" color="textSecondary">
+                        Databases
+                    </Typography>
+                    {skillsData[0].databases.map((txt, index) => (
+                        <Typography variant="body1" color="textSecondary" key={'language_'+index}>
+                            {txt}
+                        </Typography>
+                    ))}
+                </Box>
+            </Container>
+            
 
-      {/* <div className={classes.cardContainer}>
-        {services.map((service, index) => (
-          <Card className={classes.card} key={index}>
-            <CardContent className={classes.cardContent}>
-              {service.icon === 'CodeIcon' ? <CodeIcon style={{width: '30px', height: '30px'}}/> : service.icon === 'CloudIcon' ? 
-              <CloudIcon style={{width: '30px', height: '30px'}}/> : <LayersIcon  style={{width: '30px', height: '30px'}}/>}
-              <Typography variant="h5" component="div" style={{padding: '10px'}}>
-                {service.title}
-              </Typography>
-              <Typography variant="body1" color="textSecondary">
-                {service.description}
-              </Typography>
-            </CardContent>
-          </Card>
-        ))}
-      </div> */}
+            {/* Concepts */}
+            <Container>
+                {/* Software Concepts */}
+                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+                    <Typography variant="h5" color="textSecondary">
+                        Software Concepts
+                    </Typography>
+                    {skillsData[0].software.map((txt, index) => (
+                        <Typography variant="body1" color="textSecondary" key={'language_'+index}>
+                            {txt}
+                        </Typography>
+                    ))}
+                </Box>
+                {/* Data Concepts */}
+                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+                    <Typography variant="h5" color="textSecondary">
+                        Data Concepts
+                    </Typography>
+                    {skillsData[0].data.map((txt, index) => (
+                        <Typography variant="body1" color="textSecondary" key={'language_'+index}>
+                            {txt}
+                        </Typography>
+                    ))}
+                </Box>
+            </Container>
+            <Container>
+                {/* Big Data Tools */}
+                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+                    <Typography variant="h5" color="textSecondary">
+                        Big Data Tools
+                    </Typography>
+                    {skillsData[0].bigData.map((txt, index) => (
+                        <Typography variant="body1" color="textSecondary" key={'language_'+index}>
+                            {txt}
+                        </Typography>
+                    ))}
+                </Box>
+                {/* Cloud */}
+                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+                    <Typography variant="h5" color="textSecondary">
+                        Cloud
+                    </Typography>
+                    {skillsData[0].cloud.map((txt, index) => (
+                        <Typography variant="body1" color="textSecondary" key={'language_'+index}>
+                            {txt}
+                        </Typography>
+                    ))}
+                </Box>
+                {/* Visualization */}
+                <Box sx={{display: 'flex', flexDirection: 'column'}}>
+                    <Typography variant="h5" color="textSecondary">
+                        Visualization
+                    </Typography>
+                    {skillsData[0].visualization.map((txt, index) => (
+                        <Typography variant="body1" color="textSecondary" key={'language_'+index}>
+                            {txt}
+                        </Typography>
+                    ))}
+                </Box>
+            </Container>
+        </Container>
+        
     </Container>
   );
 };
 
-export default Services;
+export default TopSkills;

@@ -1,0 +1,12 @@
+[
+    {
+        "languages": ["Python", "JavaScript", "C", "C++", "SQL"],
+        "software": ["Data Structures & Algorithms", "Distributed Systems", "Systems Design", "Software Architecture & Design", "Database Systems"],
+        "data": ["Data Modelling", "Data Warehouse", "Data Lake", "Data Pipeline", "Extract-Transform-Load (ETL)", "Data Analysis", "Visualization"],
+        "databases": ["MS SQL Server", "Azure SQL Database", "Firestore", "MySQL"],
+        "frameworks": ["React.js", "Node.js", "Flask"],
+        "bigData": ["PySpark", "SparkSQL", "Spark", "Hadoop", "Databricks"],
+        "cloud": ["Azure", "Google Cloud Platform (GCP)", "Salesforce Data Cloud"],
+        "visualization": ["Excel", "Tableau"]
+    }
+]
