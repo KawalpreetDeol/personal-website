@@ -67,17 +67,6 @@
     },
     {
         "type": "project",
-        "title": "Banking Client Analysis",
-        "skills": ["Python", "Jupyter Notebook", "Pandas", "Seaborn", "Matplotlib", "Scikit-Learn"],
-        "startDate": "2023-12-15",
-        "endDate": "2024-01-30",
-        "status": "inprogress",
-        "shortDesc": "Performing exploratory data analysis on a bank dataset",
-        "projectURL": "https://github.com/KawalpreetDeol/banking-client-analysis",
-        "logoURL": "python_logo.jpg"
-    },
-    {
-        "type": "project",
         "title": "Turtle Crossing Game",
         "skills": ["Python", "Turtle Graphics", "OOP", "Game Development"],
         "startDate": "2023-08-15",

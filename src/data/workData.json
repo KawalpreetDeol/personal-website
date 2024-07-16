@@ -1,8 +1,21 @@
 [
     {
         "type": "work",
+        "title": "Software Engineer",
+        "skills": ["Python", "Django", "JavaScript", "React", "PostgreSQL", "AWS"],
+        "startDate": "2024-05-15",
+        "endDate": "Present",
+        "status": "ongoing",
+        "location": {"city": "Mississauga", "state": "Ontario"},
+        "positionType": "Contract",
+        "timeType": "Full-time",
+        "company": "MEM Engineering Inc.", 
+        "logoURL": "mem_logo.jpg"
+    },
+    {
+        "type": "work",
         "title": "Data Engineer",
-        "skills": ["GCP", "Python", "Flask", "React.js", "Data Quality"],
+        "skills": ["GCP", "Python", "Flask", "React", "Data Quality"],
         "startDate": "2022-09-15",
         "endDate": "2022-12-30",
         "status": "complete",
@@ -28,7 +41,7 @@
     {
         "type": "work",
         "title": "FullStack Developer",
-        "skills": ["Test Driven Development (TDD)", "Product Design"],
+        "skills": ["Vue", "Flask", "Test Driven Development (TDD)", "SDLC", "CI/CD"],
         "startDate": "2021-05-15",
         "endDate": "2021-08-30",
         "status": "complete",
@@ -41,7 +54,7 @@
     {
         "type": "work",
         "title": "Web Developer",
-        "skills": ["React.js", "Laravel", "MySQL", "Relational Modelling"],
+        "skills": ["React", "Laravel", "MySQL", "Relational Modelling"],
         "startDate": "2020-09-15",
         "endDate": "2020-12-30",
         "status": "complete",
@@ -54,7 +67,7 @@
     {
         "type": "work",
         "title": "PHP Developer",
-        "skills": ["Vue.js", "MySQL", "API", "Relational Modelling"],
+        "skills": ["Vue", "MySQL", "API", "Relational Modelling"],
         "startDate": "2020-01-15",
         "endDate": "2020-04-30",
         "status": "complete",

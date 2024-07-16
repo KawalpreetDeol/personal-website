@@ -47,19 +47,33 @@ const projects = [
     link: "https://github.com/KawalpreetDeol/vehicle-telemetry-processing"
   },
   {
-    icon: 'tableau_software_logo.jpg',
-    title: 'IMDB Data Analysis',
-    description: `Analysis and visualization of the IMDB dataset using Tableau. Explored relationships between Facebook Likes 
-                  and IMDB Score, Facebook Likes and Revenue, Content Rating and Revenue, and Budget over Time by Genre.`,
-    link: "https://github.com/KawalpreetDeol/imdb-analysis"
+    icon: 'android_logo.jpg',
+    title: 'Polymorph Games',
+    description: `Developed an Android app using Java and Kotlin for the application and Node for the Firebase backend to manage 
+                  user scores and ranks for team-built games.`,
+    link: "https://github.com/KawalpreetDeol/Polymorph-Games-Backend"
   },
   {
-    icon: 'python_logo.jpg',
-    title: 'Stats Utils',
-    description: `Developed and published a Python package on PyPi for calculating Binomial and Gaussian distributions, using
-                  Object-Oriented Programming (OOP) concepts to modularize and abstract the code.`,
-    link: "https://github.com/KawalpreetDeol/stats-utils"
-  }
+    icon: 'javascript_logo.jpg',
+    title: 'Music Connect Backend',
+    description: `Led the development of a scalable, serverless backend system for a music social media platform, focusing on 
+                  real-time data handling and user authentication with Firebase and Node.`,
+    link: "https://github.com/KawalpreetDeol/music-connect-backend"
+  },
+  // {
+  //   icon: 'tableau_software_logo.jpg',
+  //   title: 'IMDB Data Analysis',
+  //   description: `Analysis and visualization of the IMDB dataset using Tableau. Explored relationships between Facebook Likes 
+  //                 and IMDB Score, Facebook Likes and Revenue, Content Rating and Revenue, and Budget over Time by Genre.`,
+  //   link: "https://github.com/KawalpreetDeol/imdb-analysis"
+  // },
+  // {
+  //   icon: 'python_logo.jpg',
+  //   title: 'Stats Utils',
+  //   description: `Developed and published a Python package on PyPi for calculating Binomial and Gaussian distributions, using
+  //                 Object-Oriented Programming (OOP) concepts to modularize and abstract the code.`,
+  //   link: "https://github.com/KawalpreetDeol/stats-utils"
+  // }
   // {
   //   icon: 'python_logo.jpg',
   //   title: 'Pong Game',

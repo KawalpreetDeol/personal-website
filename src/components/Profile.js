@@ -8,7 +8,7 @@ import socialMediaData from '../data/socialMediaData.json';
 const Profile = () => {
   const [jobTitle, setJobTitle] = useState('');
   const [cursorVisible, setCursorVisible] = useState(true);
-  const jobTitles = ['Software Engineer', 'Data Engineer', 'Data Analyst', 'Full-Stack Engineer'];
+  const jobTitles = ['Software Engineer', 'Data Engineer', 'Full-Stack Engineer'];
 
   useEffect(() => {
     let currentIndex = 0;
