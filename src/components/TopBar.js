@@ -104,7 +104,7 @@ function TopBar() {
                 
               </Menu>
             </Container>
-            {/* <Container sx={{ display: { xs: 'flex', md: 'none' }, justifyContent:'flex-end', alignItems: 'flex-end'}}>
+            <Container sx={{ display: { xs: 'flex', md: 'none' }, justifyContent:'flex-end', alignItems: 'flex-end'}}>
               <Button
                   key={"ResumePhone"}
                   sx={{ my: 2, color: 'inherit' }}
@@ -113,7 +113,7 @@ function TopBar() {
                 >
                   {"Resume"}
               </Button>
-            </Container> */}
+            </Container>
           </Container>
           <Box width="33%" justifyContent="center" alignItems="center" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -130,13 +130,13 @@ function TopBar() {
           </Box>
 
           <Box width="33%" justifyContent="flex-end" alignItems="center" sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex'}}}>
-            {/* <Button
+            <Button
               key={"Resume"}
               sx={{ my: 2, color: 'inherit', display: 'block' }}
               onClick={handleDownload}
             >
               {"Resume"}
-            </Button> */}
+            </Button>
           <span style={{display: { xs: 'none', md: 'block' }}}>
           <Link to='/contact' style={{ all: 'unset' }}>
             <Button
