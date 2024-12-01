@@ -40,6 +40,19 @@
     },
     {
         "type": "work",
+        "title": "Software Engineer",
+        "skills": ["Vue", "Laravel", "MySQL"],
+        "startDate": "2021-09-06",
+        "endDate": "2021-12-31",
+        "status": "complete",
+        "location": {"city": "Toronto", "state": "Ontario"},
+        "positionType": "Contract",
+        "timeType": "Part-time",
+        "company": "Venngo",
+        "logoURL": "venngo_logo.jpg"
+    },
+    {
+        "type": "work",
         "title": "FullStack Developer",
         "skills": ["Vue", "Flask", "Test Driven Development (TDD)", "SDLC", "CI/CD"],
         "startDate": "2021-05-15",
