@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Typography, Box } from '@mui/material';
 import VerticalTimeline from '../components/VerticalTimeline';
-import SocialMediaSidebar from '../components/SocialMediaSidebar';
+
 import TimelineFilter from '../components/TimelineFilter';
 import Profile from '../components/Profile';
 import Services from '../components/Services';
@@ -13,7 +13,7 @@ import certificationData from '../data/certificationData.json';
 import projectData from '../data/projectData.json';
 import courseData from '../data/courseData.json';
 
-import socialMediaData from '../data/socialMediaData.json';
+
 import TopProjects from '../components/TopProjects';
 
 function Home() {
@@ -63,7 +63,6 @@ function Home() {
         <TimelineFilter selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
         <VerticalTimeline data={sortedData} />
       </Box>
-      <SocialMediaSidebar socialMediaData={socialMediaData}/>
     </Container>
   );
 }

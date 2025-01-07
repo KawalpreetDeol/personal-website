@@ -8,6 +8,8 @@ import ContactMe from './views/ContactMe';
 import Portfolio from './views/Portfolio';
 import { createTheme } from '@mui/material/styles';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import socialMediaData from './data/socialMediaData.json';
+import SocialMediaSidebar from './components/SocialMediaSidebar';
 const theme = createTheme({
   palette: {
     primary: {
@@ -47,6 +49,7 @@ function App() {
       </div>
       </div>
       </Router>
+      <SocialMediaSidebar socialMediaData={socialMediaData}/>
     </div>
     
   );
