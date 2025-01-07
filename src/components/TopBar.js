@@ -15,8 +15,8 @@ import CloudIcon from '@mui/icons-material/Cloud';
 import { Link } from 'react-router-dom'; 
 
 // const pages = [['Home', '/'], ['Experiences', 'experience'], ['Projects', 'projects']];
-const pages = [['Home', '/']];
-const pages_phone = [['Home', '/'], ['Contact Me', '/contact']];
+const pages = [['Home', '/'], ['Portfolio', '/portfolio']];
+const pages_phone = [['Home', '/'], ['Portfolio', '/portfolio'], ['Contact Me', '/contact']];
 
 function TopBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);

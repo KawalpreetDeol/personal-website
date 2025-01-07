@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './views/Home';
 import Projects from './views/Projects';
 import ContactMe from './views/ContactMe';
-import Experiences from './views/Experiences';
+import Portfolio from './views/Portfolio';
 import { createTheme } from '@mui/material/styles';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const theme = createTheme({
@@ -34,7 +34,7 @@ function App() {
             <Routes>
               <Route path="/" exact element={<Home/>} />
               <Route path="/projects" element={<Projects/>} />
-              <Route path="/experience" element={<Experiences/>} />
+              <Route path="/portfolio" element={<Portfolio/>} />
               <Route path="/contact" element={<ContactMe/>} />
             </Routes>
         </div>
