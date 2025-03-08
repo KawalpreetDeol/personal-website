@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import {
   TextField,
   Tooltip,
@@ -11,7 +10,8 @@ import {
   Paper,
   Slide,
   CircularProgress,
-  Backdrop
+  Backdrop,
+  Box
 } from '@mui/material';
 import MuiAlert from '@mui/material/Alert';
 import socialMediaData from '../data/socialMediaData.json';
@@ -22,28 +22,6 @@ import SocialMediaBox from '../components/SocialMediaBox';
 const functions = getFunctions();
 const submitContactForm = httpsCallable(functions, 'submitContactForm');
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    minHeight: '100vh',
-  },
-  formContainer: {
-    padding: theme.spacing(4),
-    boxShadow: '0px 3px 15px rgba(0, 0, 0, 0.2)',
-    borderRadius: theme.spacing(1),
-    width: '100%',
-    maxWidth: '400px',
-  },
-  textField: {
-    marginBottom: theme.spacing(2),
-  },
-  submitButton: {
-    marginTop: theme.spacing(2),
-  },
-}));
-
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
@@ -53,7 +31,6 @@ function TransitionUp(props) {
 }
 
 const ContactMe = () => {
-  const classes = useStyles();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSnackbarOpen, setSnackbarOpen] = useState(false);
   const [severity, setSeverity] = useState(false);
@@ -134,16 +111,30 @@ const ContactMe = () => {
 
   return (
     <div style={{display: 'flex', flexDirection: 'column'}}>
-      <Container className={classes.root} style={{ minHeight: '84vh', maxHeight: '100vh', 
-                                                  display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <Paper className={classes.formContainer}>
+      <Container sx={{
+          minHeight: '84vh',
+          maxHeight: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Paper 
+          sx={{
+            p: 4,
+            boxShadow: '0px 3px 15px rgba(0,0,0,0.2)',
+            borderRadius: 1,
+            width: '100%',
+            maxWidth: 400,
+          }}
+        >
           <Typography variant="h5" align="center" gutterBottom>
             Contact Me
           </Typography>
           <form onSubmit={handleSubmit}>
             <Tooltip title={nameError ? 'Invalid name. Only alphabetic characters and a single space are allowed. The maximum character length is 30.' : ''} placement="bottom" disableHoverListener={!nameError}>
               <TextField
-                className={classes.textField}
+                sx={{ mb: 2 }}
                 label="Name"
                 name="name"
                 variant="outlined"
@@ -157,7 +148,7 @@ const ContactMe = () => {
             </Tooltip>
             <Tooltip title={emailError ? 'Invalid email. Please follow the RFC 5321 and RFC 5322 specifications. e.g. example@example.com' : ''} placement="bottom" disableHoverListener={!emailError}>
               <TextField
-                className={classes.textField}
+                sx={{ mb: 2 }}
                 label="Email"
                 name="email"
                 error={emailError}
@@ -170,7 +161,7 @@ const ContactMe = () => {
               />
             </Tooltip>
             <TextField
-              className={classes.textField}
+              sx={{ mb: 2 }}
               label="Message"
               name="message"
               multiline
@@ -183,7 +174,7 @@ const ContactMe = () => {
               required
             />
             <Button
-              className={classes.submitButton}
+              sx={{ mt: 2 }}
               variant="contained"
               color="primary"
               type="submit"
@@ -204,7 +195,7 @@ const ContactMe = () => {
             {severity ? "Your form was successfully submitted." : `There was an issue with your submission. ${errorMessage}`}
           </Alert>
         </Snackbar>
-        <Backdrop className={classes.backdrop} open={submitStatus === 'loading'}>
+        <Backdrop open={submitStatus === 'loading'}>
           <CircularProgress color="primary" />
         </Backdrop>
         

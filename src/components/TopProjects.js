@@ -1,43 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardContent, Typography, Container } from '@mui/material';
+import { Card, CardContent, Typography, Container, Box } from '@mui/material';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    marginTop: theme.spacing(4),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  cardContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'nowrap',
-    overflowX: 'auto',
-    alignItems: 'flex-start',
-    [theme.breakpoints.up('md')]: {
-      alignItems: 'center', // center alignment for medium screens and above
-    },
-    justifyContent: 'flex-start',
-    [theme.breakpoints.up('md')]: {
-      justifyContent: 'center', // center alignment for medium screens and above
-    },
-    gap: theme.spacing(2),
-    padding: theme.spacing(2),
-    maxWidth: '80vw'
-  },
-  card: {
-    minWidth: 275,
-    maxWidth: 350,
-    margin: theme.spacing(2),
-  },
-  cardContent: {
-    textAlign: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-}));
 const projects = [
   {
     icon: 'azure_logo_2.jpg',
@@ -83,18 +46,49 @@ const projects = [
   // }
 ];
 const TopProjects = () => {
-  const classes = useStyles();
 
   return (
-    <Container className={classes.root}>
+    <Container 
+      sx={{
+        mt: 4,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+      }}
+    >
       <Typography variant="h4" align="center" gutterBottom>
       Top Projects
       </Typography>
 
-      <div className={classes.cardContainer}>
+      <Box 
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'nowrap',
+          overflowX: 'auto',
+          alignItems: { xs: 'flex-start', md: 'center' },
+          justifyContent: { xs: 'flex-start', md: 'center' },
+          gap: 2,
+          p: 2,
+          maxWidth: '80vw',
+        }}
+      >
         {projects.map((project, index) => (
-          <Card className={classes.card} key={index}>
-            <CardContent className={classes.cardContent}>
+          <Card 
+            sx={{
+              minWidth: 275,
+              maxWidth: 350,
+              m: 2,
+            }} key={index}
+          >
+            <CardContent 
+              sx={{
+                textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+            >
               <img
                 src={'./logos/' + project.icon} 
                 alt=''
@@ -115,7 +109,7 @@ const TopProjects = () => {
             </CardContent>
           </Card>
         ))}
-      </div>
+      </Box>
     </Container>
   );
   

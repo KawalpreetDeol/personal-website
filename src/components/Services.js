@@ -1,47 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardContent, Typography, Container } from '@mui/material';
+import { Card, CardContent, Typography, Container, Box } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
 import CloudIcon from '@mui/icons-material/Cloud';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
 import LayersIcon from '@mui/icons-material/Layers';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    marginTop: theme.spacing(4),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  cardContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'nowrap',
-    overflowX: 'auto',
-    alignItems: 'flex-start',
-    [theme.breakpoints.up('md')]: {
-      alignItems: 'center', // center alignment for medium screens and above
-    },
-    justifyContent: 'flex-start',
-    [theme.breakpoints.up('md')]: {
-      justifyContent: 'center', // center alignment for medium screens and above
-    },
-    gap: theme.spacing(2),
-    padding: theme.spacing(2),
-    maxWidth: '80vw'
-  },
-  card: {
-    minWidth: 275,
-    maxWidth: 350,
-    margin: theme.spacing(2),
-  },
-  cardContent: {
-    textAlign: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-}));
 
 const services = [
   {
@@ -82,18 +44,50 @@ const services = [
 ];
 
 const Services = () => {
-  const classes = useStyles();
 
   return (
-    <Container className={classes.root}>
+    <Container 
+      sx={{
+        mt: 4,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <Typography variant="h4" align="center" gutterBottom>
         Services
       </Typography>
 
-      <div className={classes.cardContainer}>
+      <Box 
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'nowrap',
+          overflowX: 'auto',
+          alignItems: { xs: 'flex-start', md: 'center' },
+          justifyContent: { xs: 'flex-start', md: 'center' },
+          gap: 2,
+          p: 2,
+          maxWidth: '80vw',
+        }}
+      >
         {services.map((service, index) => (
-          <Card className={classes.card} key={index}>
-            <CardContent className={classes.cardContent}>
+          <Card 
+            sx={{
+              minWidth: 275,
+              maxWidth: 350,
+              m: 2, // margin spacing
+            }} 
+            key={index}
+          >
+            <CardContent 
+              sx={{
+                textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+            >
               {service.icon === 'CodeIcon' ? <CodeIcon style={{width: '30px', height: '30px'}}/> : service.icon === 'CloudIcon' ? 
               <CloudIcon style={{width: '30px', height: '30px'}}/> : <AnalyticsIcon  style={{width: '30px', height: '30px'}}/>}
               <Typography variant="h5" component="div" style={{padding: '10px'}}>
@@ -105,7 +99,7 @@ const Services = () => {
             </CardContent>
           </Card>
         ))}
-      </div>
+      </Box>
     </Container>
   );
 };
