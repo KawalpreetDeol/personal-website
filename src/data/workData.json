@@ -10,7 +10,8 @@
         "positionType": "Contract",
         "timeType": "Full-time",
         "company": "MEM Engineering Inc.", 
-        "logoURL": "mem_logo.jpg"
+        "logoURL": "mem_logo.jpg",
+        "points": []
     },
     {
         "type": "work",
